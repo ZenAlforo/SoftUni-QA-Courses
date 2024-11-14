@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B44C7FD7-9F95-4EDC-A785-10A9A03EDCFC}|Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\exercise data types, variables, key concepts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B44C7FD7-9F95-4EDC-A785-10A9A03EDCFC}|Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj|solutionrelative:exercise data types, variables, key concepts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E9974DC-E67A-4CD2-B596-F83709ABCB03}|2. Centuries to Minutes\\2. Centuries to Minutes.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\2. centuries to minutes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E9974DC-E67A-4CD2-B596-F83709ABCB03}|2. Centuries to Minutes\\2. Centuries to Minutes.csproj|solutionrelative:2. centuries to minutes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A879E8-30B3-46C5-9E0D-9A47B9394ACC}|3. Redecoding\\3. Redecoding.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\3. redecoding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A879E8-30B3-46C5-9E0D-9A47B9394ACC}|3. Redecoding\\3. Redecoding.csproj|solutionrelative:3. redecoding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8844575-DF9D-43CD-92D5-AC48EDE828F3}|4. Food Delivery\\4. Food Delivery.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\4. food delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8844575-DF9D-43CD-92D5-AC48EDE828F3}|4. Food Delivery\\4. Food Delivery.csproj|solutionrelative:4. food delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810CE09C-B4FF-4153-9E0B-03F04ADC42BD}|5. Basketball equipment\\5. Basketball equipment.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\5. basketball equipment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810CE09C-B4FF-4153-9E0B-03F04ADC42BD}|5. Basketball equipment\\5. Basketball equipment.csproj|solutionrelative:5. basketball equipment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E8CA0B2-E030-49FE-8883-4F98ED67DD53}|6. Aquarium\\6. Aquarium.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\6. aquarium\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E8CA0B2-E030-49FE-8883-4F98ED67DD53}|6. Aquarium\\6. Aquarium.csproj|solutionrelative:6. aquarium\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E8CA0B2-E030-49FE-8883-4F98ED67DD53}|6. Aquarium\\6. Aquarium.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\6. aquarium\\6. aquarium.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1E8CA0B2-E030-49FE-8883-4F98ED67DD53}|6. Aquarium\\6. Aquarium.csproj|solutionrelative:6. aquarium\\6. aquarium.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B44C7FD7-9F95-4EDC-A785-10A9A03EDCFC}|Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj|c:\\users\\zenle\\source\\repos\\exercise data types, variables, key concepts\\exercise data types, variables, key concepts\\1. reversed nums.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B44C7FD7-9F95-4EDC-A785-10A9A03EDCFC}|Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj|solutionrelative:exercise data types, variables, key concepts\\1. reversed nums.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "6. Aquarium",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\6. Aquarium\\6. Aquarium.csproj",
+              "RelativeDocumentMoniker": "6. Aquarium\\6. Aquarium.csproj",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\6. Aquarium\\6. Aquarium.csproj",
+              "RelativeToolTip": "6. Aquarium\\6. Aquarium.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-20T17:32:35.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\6. Aquarium\\Program.cs",
+              "RelativeDocumentMoniker": "6. Aquarium\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\6. Aquarium\\Program.cs",
+              "RelativeToolTip": "6. Aquarium\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T17:17:35.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\5. Basketball equipment\\Program.cs",
+              "RelativeDocumentMoniker": "5. Basketball equipment\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\5. Basketball equipment\\Program.cs",
+              "RelativeToolTip": "5. Basketball equipment\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T17:08:10.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\4. Food Delivery\\Program.cs",
+              "RelativeDocumentMoniker": "4. Food Delivery\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\4. Food Delivery\\Program.cs",
+              "RelativeToolTip": "4. Food Delivery\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAqwBkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T17:03:50.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\3. Redecoding\\Program.cs",
+              "RelativeDocumentMoniker": "3. Redecoding\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\3. Redecoding\\Program.cs",
+              "RelativeToolTip": "3. Redecoding\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAkwBkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T16:43:24.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\2. Centuries to Minutes\\Program.cs",
+              "RelativeDocumentMoniker": "2. Centuries to Minutes\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\2. Centuries to Minutes\\Program.cs",
+              "RelativeToolTip": "2. Centuries to Minutes\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T16:23:12.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "1. Reversed Nums.csproj",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj",
+              "RelativeDocumentMoniker": "Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj",
+              "RelativeToolTip": "Exercise Data Types, Variables, Key Concepts\\1. Reversed Nums.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-19T16:18:11.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\Exercise Data Types, Variables, Key Concepts\\Program.cs",
+              "RelativeDocumentMoniker": "Exercise Data Types, Variables, Key Concepts\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Exercise Data Types, Variables, Key Concepts\\Exercise Data Types, Variables, Key Concepts\\Program.cs",
+              "RelativeToolTip": "Exercise Data Types, Variables, Key Concepts\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T16:17:38.849Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

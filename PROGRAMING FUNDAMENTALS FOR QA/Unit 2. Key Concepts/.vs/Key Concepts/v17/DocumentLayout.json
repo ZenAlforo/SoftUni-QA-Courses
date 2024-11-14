@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01E1BEC2-7771-4313-9798-8F979574BADB}|5. Deposit Calculator\\5. Deposit Calculator.csproj|c:\\users\\zenle\\source\\repos\\key concepts\\5. deposit calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E1BEC2-7771-4313-9798-8F979574BADB}|5. Deposit Calculator\\5. Deposit Calculator.csproj|solutionrelative:5. deposit calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F2B56C-B293-4584-970D-90E1AA73504D}|4. Tiles\\4. Tiles.csproj|c:\\users\\zenle\\source\\repos\\key concepts\\4. tiles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F2B56C-B293-4584-970D-90E1AA73504D}|4. Tiles\\4. Tiles.csproj|solutionrelative:4. tiles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C95CA7A1-188E-4252-90FE-B1F3E96E72B9}|3. Market\\3. Market.csproj|c:\\users\\zenle\\source\\repos\\key concepts\\3. market\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C95CA7A1-188E-4252-90FE-B1F3E96E72B9}|3. Market\\3. Market.csproj|solutionrelative:3. market\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58C22182-50AA-4751-9316-F65ED894AAE7}|2. FourOperations\\2. FourOperations.csproj|c:\\users\\zenle\\source\\repos\\key concepts\\2. fouroperations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58C22182-50AA-4751-9316-F65ED894AAE7}|2. FourOperations\\2. FourOperations.csproj|solutionrelative:2. fouroperations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A6F287-2E51-4D78-B9D0-B5E0D75F09C7}|1. Convert USD to EUR\\1. Convert USD to EUR.csproj|c:\\users\\zenle\\source\\repos\\key concepts\\1. convert usd to eur\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A6F287-2E51-4D78-B9D0-B5E0D75F09C7}|1. Convert USD to EUR\\1. Convert USD to EUR.csproj|solutionrelative:1. convert usd to eur\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E133CC-1F8E-46B5-B98F-7A04843D50C1}|6. Supplies For School\\7. Supplies For School.csproj|c:\\users\\zenle\\source\\repos\\key concepts\\6. supplies for school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E133CC-1F8E-46B5-B98F-7A04843D50C1}|6. Supplies For School\\7. Supplies For School.csproj|solutionrelative:6. supplies for school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\6. Supplies For School\\Program.cs",
+              "RelativeDocumentMoniker": "6. Supplies For School\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\6. Supplies For School\\Program.cs",
+              "RelativeToolTip": "6. Supplies For School\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T15:24:04.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\5. Deposit Calculator\\Program.cs",
+              "RelativeDocumentMoniker": "5. Deposit Calculator\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\5. Deposit Calculator\\Program.cs",
+              "RelativeToolTip": "5. Deposit Calculator\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:32:10.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\4. Tiles\\Program.cs",
+              "RelativeDocumentMoniker": "4. Tiles\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\4. Tiles\\Program.cs",
+              "RelativeToolTip": "4. Tiles\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:19:20.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\3. Market\\Program.cs",
+              "RelativeDocumentMoniker": "3. Market\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\3. Market\\Program.cs",
+              "RelativeToolTip": "3. Market\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:13:33.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\2. FourOperations\\Program.cs",
+              "RelativeDocumentMoniker": "2. FourOperations\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\2. FourOperations\\Program.cs",
+              "RelativeToolTip": "2. FourOperations\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:00:26.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\1. Convert USD to EUR\\Program.cs",
+              "RelativeDocumentMoniker": "1. Convert USD to EUR\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Key Concepts\\1. Convert USD to EUR\\Program.cs",
+              "RelativeToolTip": "1. Convert USD to EUR\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:56:07.435Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

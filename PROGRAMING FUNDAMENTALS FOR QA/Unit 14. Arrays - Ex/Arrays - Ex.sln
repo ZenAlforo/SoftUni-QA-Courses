@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Equal Arrays", "1. Equal Arrays\1. Equal Arrays.csproj", "{980F8018-69B1-4ADD-9F85-1BB44FEF6F9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Common Elements", "2. Common Elements\2. Common Elements.csproj", "{A6237AA0-2751-439A-9A11-83A94A561FC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Condense Array to Number", "3. Condense Array to Number\3. Condense Array to Number.csproj", "{DB6171BE-F445-4D57-8E87-6BFB8256486C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Magic Sum", "4. Magic Sum\4. Magic Sum.csproj", "{341BC3A2-A920-436D-98AB-CAA81B28F34C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Zig-Zag Array", "5. Zig-Zag Array\5. Zig-Zag Array.csproj", "{787F4688-12C8-4413-84C9-5950CC0B5307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Array Rotation", "6. Array Rotation\6. Array Rotation.csproj", "{529D6087-1616-42C8-AFC3-2300CD2D0274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Top Integers", "7. Top Integers\7. Top Integers.csproj", "{88BB2438-FD9F-4B22-8DF2-DD0AAAA1DB87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{980F8018-69B1-4ADD-9F85-1BB44FEF6F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980F8018-69B1-4ADD-9F85-1BB44FEF6F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980F8018-69B1-4ADD-9F85-1BB44FEF6F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980F8018-69B1-4ADD-9F85-1BB44FEF6F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6237AA0-2751-439A-9A11-83A94A561FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6237AA0-2751-439A-9A11-83A94A561FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6237AA0-2751-439A-9A11-83A94A561FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6237AA0-2751-439A-9A11-83A94A561FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6171BE-F445-4D57-8E87-6BFB8256486C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6171BE-F445-4D57-8E87-6BFB8256486C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6171BE-F445-4D57-8E87-6BFB8256486C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6171BE-F445-4D57-8E87-6BFB8256486C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341BC3A2-A920-436D-98AB-CAA81B28F34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341BC3A2-A920-436D-98AB-CAA81B28F34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341BC3A2-A920-436D-98AB-CAA81B28F34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341BC3A2-A920-436D-98AB-CAA81B28F34C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787F4688-12C8-4413-84C9-5950CC0B5307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787F4688-12C8-4413-84C9-5950CC0B5307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787F4688-12C8-4413-84C9-5950CC0B5307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787F4688-12C8-4413-84C9-5950CC0B5307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529D6087-1616-42C8-AFC3-2300CD2D0274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529D6087-1616-42C8-AFC3-2300CD2D0274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529D6087-1616-42C8-AFC3-2300CD2D0274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529D6087-1616-42C8-AFC3-2300CD2D0274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BB2438-FD9F-4B22-8DF2-DD0AAAA1DB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BB2438-FD9F-4B22-8DF2-DD0AAAA1DB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BB2438-FD9F-4B22-8DF2-DD0AAAA1DB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BB2438-FD9F-4B22-8DF2-DD0AAAA1DB87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A84BC62-F8D8-4767-B444-90CE67F50402}
+	EndGlobalSection
+EndGlobal

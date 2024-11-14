@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\Data Variables\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{421DBEC6-9D7E-48D5-B62D-ABA0503DC28C}|10. Calculate Spee\\10. Calculate Speed.csproj|c:\\users\\zenle\\source\\repos\\data variables\\10. calculate spee\\10. calculate speed.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{421DBEC6-9D7E-48D5-B62D-ABA0503DC28C}|10. Calculate Spee\\10. Calculate Speed.csproj|solutionrelative:10. calculate spee\\10. calculate speed.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A71EC7D-3DE7-4EA1-8BB4-2EB2E5390E23}|9. Days to Minutes\\9. Days to Minutes.csproj|c:\\users\\zenle\\source\\repos\\data variables\\9. days to minutes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A71EC7D-3DE7-4EA1-8BB4-2EB2E5390E23}|9. Days to Minutes\\9. Days to Minutes.csproj|solutionrelative:9. days to minutes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0564B4C1-2F9F-4EC8-AEB6-F69F100716E1}|8. Town Info\\8. Town Info.csproj|c:\\users\\zenle\\source\\repos\\data variables\\8. town info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0564B4C1-2F9F-4EC8-AEB6-F69F100716E1}|8. Town Info\\8. Town Info.csproj|solutionrelative:8. town info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C0A18B-A9A3-4DF3-BE29-45713CE0095F}|7. Person Info\\7. Person Info.csproj|c:\\users\\zenle\\source\\repos\\data variables\\7. person info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C0A18B-A9A3-4DF3-BE29-45713CE0095F}|7. Person Info\\7. Person Info.csproj|solutionrelative:7. person info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E5BCB5-72F6-40EC-8622-160AADA0C5B1}|6. Customers Info\\6. Customers Info.csproj|c:\\users\\zenle\\source\\repos\\data variables\\6. customers info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E5BCB5-72F6-40EC-8622-160AADA0C5B1}|6. Customers Info\\6. Customers Info.csproj|solutionrelative:6. customers info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF01E45D-0B4F-443E-B9A6-4026F67745F3}|5. Greetings\\5. Greetings.csproj|c:\\users\\zenle\\source\\repos\\data variables\\5. greetings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF01E45D-0B4F-443E-B9A6-4026F67745F3}|5. Greetings\\5. Greetings.csproj|solutionrelative:5. greetings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E5BCB5-72F6-40EC-8622-160AADA0C5B1}|6. Customers Info\\6. Customers Info.csproj|c:\\users\\zenle\\source\\repos\\data variables\\6. customers info\\6. customers info.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{51E5BCB5-72F6-40EC-8622-160AADA0C5B1}|6. Customers Info\\6. Customers Info.csproj|solutionrelative:6. customers info\\6. customers info.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59255F0A-6EC5-4CD7-9B0E-FC5EE75FADAD}|4. Calculations\\4. Calculations.csproj|c:\\users\\zenle\\source\\repos\\data variables\\4. calculations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59255F0A-6EC5-4CD7-9B0E-FC5EE75FADAD}|4. Calculations\\4. Calculations.csproj|solutionrelative:4. calculations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59255F0A-6EC5-4CD7-9B0E-FC5EE75FADAD}|4. Calculations\\4. Calculations.csproj|c:\\users\\zenle\\source\\repos\\data variables\\4. calculations\\4. calculations.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{59255F0A-6EC5-4CD7-9B0E-FC5EE75FADAD}|4. Calculations\\4. Calculations.csproj|solutionrelative:4. calculations\\4. calculations.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CCD137B-547D-463F-955B-CEBBADA517B8}|3. Name and Expression\\3. Name and Expression.csproj|c:\\users\\zenle\\source\\repos\\data variables\\3. name and expression\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CCD137B-547D-463F-955B-CEBBADA517B8}|3. Name and Expression\\3. Name and Expression.csproj|solutionrelative:3. name and expression\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "10. Calculate Speed",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\10. Calculate Spee\\10. Calculate Speed.csproj",
+              "RelativeDocumentMoniker": "10. Calculate Spee\\10. Calculate Speed.csproj",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\10. Calculate Spee\\10. Calculate Speed.csproj",
+              "RelativeToolTip": "10. Calculate Spee\\10. Calculate Speed.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-17T16:14:18.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\9. Days to Minutes\\Program.cs",
+              "RelativeDocumentMoniker": "9. Days to Minutes\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\9. Days to Minutes\\Program.cs",
+              "RelativeToolTip": "9. Days to Minutes\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:10:22.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\8. Town Info\\Program.cs",
+              "RelativeDocumentMoniker": "8. Town Info\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\8. Town Info\\Program.cs",
+              "RelativeToolTip": "8. Town Info\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:08:31.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\7. Person Info\\Program.cs",
+              "RelativeDocumentMoniker": "7. Person Info\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\7. Person Info\\Program.cs",
+              "RelativeToolTip": "7. Person Info\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:04:45.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\6. Customers Info\\Program.cs",
+              "RelativeDocumentMoniker": "6. Customers Info\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\6. Customers Info\\Program.cs",
+              "RelativeToolTip": "6. Customers Info\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:57:37.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "6. Customers Info",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\6. Customers Info\\6. Customers Info.csproj",
+              "RelativeDocumentMoniker": "6. Customers Info\\6. Customers Info.csproj",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\6. Customers Info\\6. Customers Info.csproj",
+              "RelativeToolTip": "6. Customers Info\\6. Customers Info.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-17T15:57:36.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\5. Greetings\\Program.cs",
+              "RelativeDocumentMoniker": "5. Greetings\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\5. Greetings\\Program.cs",
+              "RelativeToolTip": "5. Greetings\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:55:40.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\4. Calculations\\Program.cs",
+              "RelativeDocumentMoniker": "4. Calculations\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\4. Calculations\\Program.cs",
+              "RelativeToolTip": "4. Calculations\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:53:44.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "4. Calculations",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\4. Calculations\\4. Calculations.csproj",
+              "RelativeDocumentMoniker": "4. Calculations\\4. Calculations.csproj",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\4. Calculations\\4. Calculations.csproj",
+              "RelativeToolTip": "4. Calculations\\4. Calculations.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-17T15:53:29.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Data Variables\\3. Name and Expression\\Program.cs",
+              "RelativeDocumentMoniker": "3. Name and Expression\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Data Variables\\3. Name and Expression\\Program.cs",
+              "RelativeToolTip": "3. Name and Expression\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:50:31.384Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

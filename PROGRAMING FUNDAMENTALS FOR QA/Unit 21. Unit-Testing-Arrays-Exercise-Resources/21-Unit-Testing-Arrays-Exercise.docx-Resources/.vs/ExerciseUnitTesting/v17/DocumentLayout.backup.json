@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\three\\Desktop\\Unit Testing Array - Lab\\21-Unit-Testing-Arrays-Exercise-Resources\\21-Unit-Testing-Arrays-Exercise.docx-Resources\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0451AC-6EF6-4DEB-AB57-595B56640BED}|TestApp.UnitTests\\TestApp.UnitTests.csproj|c:\\users\\three\\desktop\\unit testing array - lab\\21-unit-testing-arrays-exercise-resources\\21-unit-testing-arrays-exercise.docx-resources\\testapp.unittests\\repeatingchecker_lastreapeatingelementtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0451AC-6EF6-4DEB-AB57-595B56640BED}|TestApp.UnitTests\\TestApp.UnitTests.csproj|solutionrelative:testapp.unittests\\repeatingchecker_lastreapeatingelementtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepeatingChecker_LastReapeatingElementTests.cs",
+              "DocumentMoniker": "C:\\Users\\three\\Desktop\\Unit Testing Array - Lab\\21-Unit-Testing-Arrays-Exercise-Resources\\21-Unit-Testing-Arrays-Exercise.docx-Resources\\TestApp.UnitTests\\RepeatingChecker_LastReapeatingElementTests.cs",
+              "RelativeDocumentMoniker": "TestApp.UnitTests\\RepeatingChecker_LastReapeatingElementTests.cs",
+              "ToolTip": "C:\\Users\\three\\Desktop\\Unit Testing Array - Lab\\21-Unit-Testing-Arrays-Exercise-Resources\\21-Unit-Testing-Arrays-Exercise.docx-Resources\\TestApp.UnitTests\\RepeatingChecker_LastReapeatingElementTests.cs",
+              "RelativeToolTip": "TestApp.UnitTests\\RepeatingChecker_LastReapeatingElementTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T19:33:38.506Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

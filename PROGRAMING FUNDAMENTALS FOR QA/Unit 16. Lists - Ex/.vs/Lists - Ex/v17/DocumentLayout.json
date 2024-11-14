@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\Lists - Ex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13CB3C0A-9AF5-475F-9ED1-57BF45CD0CF3}|4. List Manipulation Basics\\4. List Manipulation Basics.csproj|c:\\users\\zenle\\source\\repos\\lists - ex\\4. list manipulation basics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CB3C0A-9AF5-475F-9ED1-57BF45CD0CF3}|4. List Manipulation Basics\\4. List Manipulation Basics.csproj|solutionrelative:4. list manipulation basics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Lists - Ex\\4. List Manipulation Basics\\Program.cs",
+              "RelativeDocumentMoniker": "4. List Manipulation Basics\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Lists - Ex\\4. List Manipulation Basics\\Program.cs",
+              "RelativeToolTip": "4. List Manipulation Basics\\Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAADwvx8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T18:03:50.126Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

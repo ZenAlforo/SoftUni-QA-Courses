@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\22-Unit-Testing-Lists-Exercise-Resources\\22-Unit-Testing-Lists-Exercise-Resources\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0451AC-6EF6-4DEB-AB57-595B56640BED}|TestApp.UnitTests\\TestApp.UnitTests.csproj|c:\\users\\zenle\\source\\repos\\22-unit-testing-lists-exercise-resources\\22-unit-testing-lists-exercise-resources\\testapp.unittests\\listremover_removelessthanorequaltotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0451AC-6EF6-4DEB-AB57-595B56640BED}|TestApp.UnitTests\\TestApp.UnitTests.csproj|solutionrelative:testapp.unittests\\listremover_removelessthanorequaltotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA9A811-DA4D-4CBD-B90A-9BD7912071A3}|TestApp\\TestApp.csproj|c:\\users\\zenle\\source\\repos\\22-unit-testing-lists-exercise-resources\\22-unit-testing-lists-exercise-resources\\testapp\\listremover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA9A811-DA4D-4CBD-B90A-9BD7912071A3}|TestApp\\TestApp.csproj|solutionrelative:testapp\\listremover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListRemover_RemoveLessThanOrEqualToTests.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\22-Unit-Testing-Lists-Exercise-Resources\\22-Unit-Testing-Lists-Exercise-Resources\\TestApp.UnitTests\\ListRemover_RemoveLessThanOrEqualToTests.cs",
+              "RelativeDocumentMoniker": "TestApp.UnitTests\\ListRemover_RemoveLessThanOrEqualToTests.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\22-Unit-Testing-Lists-Exercise-Resources\\22-Unit-Testing-Lists-Exercise-Resources\\TestApp.UnitTests\\ListRemover_RemoveLessThanOrEqualToTests.cs",
+              "RelativeToolTip": "TestApp.UnitTests\\ListRemover_RemoveLessThanOrEqualToTests.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwEAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:40:04.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListRemover.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\22-Unit-Testing-Lists-Exercise-Resources\\22-Unit-Testing-Lists-Exercise-Resources\\TestApp\\ListRemover.cs",
+              "RelativeDocumentMoniker": "TestApp\\ListRemover.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\22-Unit-Testing-Lists-Exercise-Resources\\22-Unit-Testing-Lists-Exercise-Resources\\TestApp\\ListRemover.cs",
+              "RelativeToolTip": "TestApp\\ListRemover.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:31:11.369Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

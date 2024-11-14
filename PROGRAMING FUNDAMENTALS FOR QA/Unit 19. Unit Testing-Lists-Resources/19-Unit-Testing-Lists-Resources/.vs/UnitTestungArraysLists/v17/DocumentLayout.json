@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\19-Unit-Testing-Lists-Resources\\19-Unit-Testing-Lists-Resources\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{017C4ED8-02F8-4CBF-A99D-1F3BED235BF6}|TestApp.UnitTests\\TestApp.UnitTests.csproj|c:\\users\\zenle\\source\\repos\\19-unit-testing-lists-resources\\19-unit-testing-lists-resources\\testapp.unittests\\adjacentequaltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017C4ED8-02F8-4CBF-A99D-1F3BED235BF6}|TestApp.UnitTests\\TestApp.UnitTests.csproj|solutionrelative:testapp.unittests\\adjacentequaltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdjacentEqualTests.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\19-Unit-Testing-Lists-Resources\\19-Unit-Testing-Lists-Resources\\TestApp.UnitTests\\AdjacentEqualTests.cs",
+              "RelativeDocumentMoniker": "TestApp.UnitTests\\AdjacentEqualTests.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\19-Unit-Testing-Lists-Resources\\19-Unit-Testing-Lists-Resources\\TestApp.UnitTests\\AdjacentEqualTests.cs",
+              "RelativeToolTip": "TestApp.UnitTests\\AdjacentEqualTests.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAmwGwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T19:02:30.597Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

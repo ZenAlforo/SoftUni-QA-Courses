@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\three\\Desktop\\03.FibonacciInRange\\FibonacciInRange\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D85C85F-E923-4744-B31C-EB8E0E0D2F73}|TestApp.Tests\\TestApp.Tests.csproj|c:\\users\\three\\desktop\\03.fibonacciinrange\\fibonacciinrange\\testapp.tests\\fibonaccitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D85C85F-E923-4744-B31C-EB8E0E0D2F73}|TestApp.Tests\\TestApp.Tests.csproj|solutionrelative:testapp.tests\\fibonaccitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DC745AC-A3D2-47DE-B810-4A90C5D3209C}|TestApp\\TestApp.csproj|c:\\users\\three\\desktop\\03.fibonacciinrange\\fibonacciinrange\\testapp\\fibonacci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DC745AC-A3D2-47DE-B810-4A90C5D3209C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\fibonacci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FibonacciTests.cs",
+              "DocumentMoniker": "C:\\Users\\three\\Desktop\\03.FibonacciInRange\\FibonacciInRange\\TestApp.Tests\\FibonacciTests.cs",
+              "RelativeDocumentMoniker": "TestApp.Tests\\FibonacciTests.cs",
+              "ToolTip": "C:\\Users\\three\\Desktop\\03.FibonacciInRange\\FibonacciInRange\\TestApp.Tests\\FibonacciTests.cs",
+              "RelativeToolTip": "TestApp.Tests\\FibonacciTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:31:23.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fibonacci.cs",
+              "DocumentMoniker": "C:\\Users\\three\\Desktop\\03.FibonacciInRange\\FibonacciInRange\\TestApp\\Fibonacci.cs",
+              "RelativeDocumentMoniker": "TestApp\\Fibonacci.cs",
+              "ToolTip": "C:\\Users\\three\\Desktop\\03.FibonacciInRange\\FibonacciInRange\\TestApp\\Fibonacci.cs",
+              "RelativeToolTip": "TestApp\\Fibonacci.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T05:16:40.132Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

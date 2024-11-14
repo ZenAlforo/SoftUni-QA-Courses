@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5895C5B-0260-478F-BE8C-B3C2FBD72D65}|9. Valid Triangle\\9. Valid Triangle.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\9. valid triangle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5895C5B-0260-478F-BE8C-B3C2FBD72D65}|9. Valid Triangle\\9. Valid Triangle.csproj|solutionrelative:9. valid triangle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B07009-247B-43D3-987C-0D872C3F2253}|8. Ticket Price\\8. Ticket Price.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\8. ticket price\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B07009-247B-43D3-987C-0D872C3F2253}|8. Ticket Price\\8. Ticket Price.csproj|solutionrelative:8. ticket price\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D259F4D-D675-4C50-8E66-9D094CEC70BE}|7. Speed info\\7. Speed info.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\7. speed info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D259F4D-D675-4C50-8E66-9D094CEC70BE}|7. Speed info\\7. Speed info.csproj|solutionrelative:7. speed info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBCF3BFF-7C9D-4D9E-A100-072008429F16}|6. Boiling water\\6. Boiling water.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\6. boiling water\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBCF3BFF-7C9D-4D9E-A100-072008429F16}|6. Boiling water\\6. Boiling water.csproj|solutionrelative:6. boiling water\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{998E6FAF-0FC2-4532-9F9A-37492B30285A}|5. Guess the password\\5. Guess the password.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\5. guess the password\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{998E6FAF-0FC2-4532-9F9A-37492B30285A}|5. Guess the password\\5. Guess the password.csproj|solutionrelative:5. guess the password\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF53DD0-7178-4D4D-A196-B34DA5746C2A}|4. Greeter Number\\4. Greeter Number.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\4. greeter number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF53DD0-7178-4D4D-A196-B34DA5746C2A}|4. Greeter Number\\4. Greeter Number.csproj|solutionrelative:4. greeter number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B73394CA-01B2-4A5C-A2AC-FE117220DBC1}|3. Number as Words\\3. Number as Words.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\3. number as words\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B73394CA-01B2-4A5C-A2AC-FE117220DBC1}|3. Number as Words\\3. Number as Words.csproj|solutionrelative:3. number as words\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F50A3C5-C6CD-44DE-B5D4-43919A2E6B38}|2. Even Or Odd\\2. Even Or Odd.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\2. even or odd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F50A3C5-C6CD-44DE-B5D4-43919A2E6B38}|2. Even Or Odd\\2. Even Or Odd.csproj|solutionrelative:2. even or odd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F85FEA5-C015-4827-BD04-92E4BA9D0E02}|1. Freezing Weather\\1. Freezing Weather.csproj|c:\\users\\zenle\\source\\repos\\simple conditional statements\\1. freezing weather\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F85FEA5-C015-4827-BD04-92E4BA9D0E02}|1. Freezing Weather\\1. Freezing Weather.csproj|solutionrelative:1. freezing weather\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\9. Valid Triangle\\Program.cs",
+              "RelativeDocumentMoniker": "9. Valid Triangle\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\9. Valid Triangle\\Program.cs",
+              "RelativeToolTip": "9. Valid Triangle\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:11:35.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\8. Ticket Price\\Program.cs",
+              "RelativeDocumentMoniker": "8. Ticket Price\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\8. Ticket Price\\Program.cs",
+              "RelativeToolTip": "8. Ticket Price\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:04:16.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\7. Speed info\\Program.cs",
+              "RelativeDocumentMoniker": "7. Speed info\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\7. Speed info\\Program.cs",
+              "RelativeToolTip": "7. Speed info\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:54:59.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\6. Boiling water\\Program.cs",
+              "RelativeDocumentMoniker": "6. Boiling water\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\6. Boiling water\\Program.cs",
+              "RelativeToolTip": "6. Boiling water\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:44:12.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\5. Guess the password\\Program.cs",
+              "RelativeDocumentMoniker": "5. Guess the password\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\5. Guess the password\\Program.cs",
+              "RelativeToolTip": "5. Guess the password\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:39:20.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\4. Greeter Number\\Program.cs",
+              "RelativeDocumentMoniker": "4. Greeter Number\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\4. Greeter Number\\Program.cs",
+              "RelativeToolTip": "4. Greeter Number\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:37:11.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\3. Number as Words\\Program.cs",
+              "RelativeDocumentMoniker": "3. Number as Words\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\3. Number as Words\\Program.cs",
+              "RelativeToolTip": "3. Number as Words\\Program.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAADwvysAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:33:27.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\2. Even Or Odd\\Program.cs",
+              "RelativeDocumentMoniker": "2. Even Or Odd\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\2. Even Or Odd\\Program.cs",
+              "RelativeToolTip": "2. Even Or Odd\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:31:34.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\1. Freezing Weather\\Program.cs",
+              "RelativeDocumentMoniker": "1. Freezing Weather\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Simple Conditional Statements\\1. Freezing Weather\\Program.cs",
+              "RelativeToolTip": "1. Freezing Weather\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T16:29:32.875Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

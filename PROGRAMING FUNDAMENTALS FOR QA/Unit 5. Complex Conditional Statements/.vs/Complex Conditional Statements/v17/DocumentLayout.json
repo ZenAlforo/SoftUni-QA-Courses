@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40890B0C-72ED-4D95-A179-8F79C0923A52}|9. Cinema\\9. Cinema.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\9. cinema\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40890B0C-72ED-4D95-A179-8F79C0923A52}|9. Cinema\\9. Cinema.csproj|solutionrelative:9. cinema\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC0DDA2-03A3-4F34-8A64-1D532429D6DB}|8. Sorted Numbers\\8. Sorted Numbers.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\8. sorted numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DC0DDA2-03A3-4F34-8A64-1D532429D6DB}|8. Sorted Numbers\\8. Sorted Numbers.csproj|solutionrelative:8. sorted numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20A3C7D6-44CE-479E-BBBB-860819A5E9AD}|7. Vowel or Consonant\\7. Vowel or Consonant.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\7. vowel or consonant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20A3C7D6-44CE-479E-BBBB-860819A5E9AD}|7. Vowel or Consonant\\7. Vowel or Consonant.csproj|solutionrelative:7. vowel or consonant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{571CC0E8-CBFC-4DA4-9969-5547C712C029}|6. Day of Week\\6. Day of Week.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\6. day of week\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{571CC0E8-CBFC-4DA4-9969-5547C712C029}|6. Day of Week\\6. Day of Week.csproj|solutionrelative:6. day of week\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6495069D-BC7E-4ED0-8DA2-514A2885BAAE}|5. Invalid Number\\5. Invalid Number.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\5. invalid number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6495069D-BC7E-4ED0-8DA2-514A2885BAAE}|5. Invalid Number\\5. Invalid Number.csproj|solutionrelative:5. invalid number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2819CF34-4759-4F4C-BCAE-9816B4D0045E}|4. Food or Drink\\4. Food or Drink.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\4. food or drink\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2819CF34-4759-4F4C-BCAE-9816B4D0045E}|4. Food or Drink\\4. Food or Drink.csproj|solutionrelative:4. food or drink\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84B2440E-60EE-45A3-B146-52F612E96320}|3. Bonus Score\\3. Bonus Score.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\3. bonus score\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84B2440E-60EE-45A3-B146-52F612E96320}|3. Bonus Score\\3. Bonus Score.csproj|solutionrelative:3. bonus score\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A30F033F-D62F-4846-922E-3CA26D54381C}|2. Largest Number Out of Three\\2. Largest Number Out of Three.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\2. largest number out of three\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A30F033F-D62F-4846-922E-3CA26D54381C}|2. Largest Number Out of Three\\2. Largest Number Out of Three.csproj|solutionrelative:2. largest number out of three\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C597777-97B4-4EC2-AFA3-740AD7535987}|1. Marketplace\\1. Marketplace.csproj|c:\\users\\zenle\\source\\repos\\complex conditional statements\\1. marketplace\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C597777-97B4-4EC2-AFA3-740AD7535987}|1. Marketplace\\1. Marketplace.csproj|solutionrelative:1. marketplace\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\9. Cinema\\Program.cs",
+              "RelativeDocumentMoniker": "9. Cinema\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\9. Cinema\\Program.cs",
+              "RelativeToolTip": "9. Cinema\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvxQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T18:29:52.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\8. Sorted Numbers\\Program.cs",
+              "RelativeDocumentMoniker": "8. Sorted Numbers\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\8. Sorted Numbers\\Program.cs",
+              "RelativeToolTip": "8. Sorted Numbers\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T18:24:44.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\7. Vowel or Consonant\\Program.cs",
+              "RelativeDocumentMoniker": "7. Vowel or Consonant\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\7. Vowel or Consonant\\Program.cs",
+              "RelativeToolTip": "7. Vowel or Consonant\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T18:18:49.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\6. Day of Week\\Program.cs",
+              "RelativeDocumentMoniker": "6. Day of Week\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\6. Day of Week\\Program.cs",
+              "RelativeToolTip": "6. Day of Week\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAADwvyMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T18:12:08.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\5. Invalid Number\\Program.cs",
+              "RelativeDocumentMoniker": "5. Invalid Number\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\5. Invalid Number\\Program.cs",
+              "RelativeToolTip": "5. Invalid Number\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T18:01:57.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\4. Food or Drink\\Program.cs",
+              "RelativeDocumentMoniker": "4. Food or Drink\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\4. Food or Drink\\Program.cs",
+              "RelativeToolTip": "4. Food or Drink\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:52:28.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\3. Bonus Score\\Program.cs",
+              "RelativeDocumentMoniker": "3. Bonus Score\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\3. Bonus Score\\Program.cs",
+              "RelativeToolTip": "3. Bonus Score\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:45:22.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\2. Largest Number Out of Three\\Program.cs",
+              "RelativeDocumentMoniker": "2. Largest Number Out of Three\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\2. Largest Number Out of Three\\Program.cs",
+              "RelativeToolTip": "2. Largest Number Out of Three\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswBgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:39:14.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\1. Marketplace\\Program.cs",
+              "RelativeDocumentMoniker": "1. Marketplace\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\Complex Conditional Statements\\1. Marketplace\\Program.cs",
+              "RelativeToolTip": "1. Marketplace\\Program.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAUwCYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:16:54.34Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\White loop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73DF4512-758A-4630-885E-F18373C13C62}|7. Number Processor\\7. Number Processor.csproj|c:\\users\\zenle\\source\\repos\\white loop\\7. number processor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DF4512-758A-4630-885E-F18373C13C62}|7. Number Processor\\7. Number Processor.csproj|solutionrelative:7. number processor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11E06752-56B5-4B1E-B6B1-E32132F2A0E8}|6. Number in Range\\6. Number in Range.csproj|c:\\users\\zenle\\source\\repos\\white loop\\6. number in range\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11E06752-56B5-4B1E-B6B1-E32132F2A0E8}|6. Number in Range\\6. Number in Range.csproj|solutionrelative:6. number in range\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EA73825-A80D-493B-AEE3-77EC6996E945}|5. Sum Digits\\5. Sum Digits.csproj|c:\\users\\zenle\\source\\repos\\white loop\\5. sum digits\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EA73825-A80D-493B-AEE3-77EC6996E945}|5. Sum Digits\\5. Sum Digits.csproj|solutionrelative:5. sum digits\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C922B70F-9851-43AE-99E4-C9888676B29F}|4. Sequence 2K \u002B 1\\4. Sequence 2K \u002B 1.csproj|c:\\users\\zenle\\source\\repos\\white loop\\4. sequence 2k \u002B 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C922B70F-9851-43AE-99E4-C9888676B29F}|4. Sequence 2K \u002B 1\\4. Sequence 2K \u002B 1.csproj|solutionrelative:4. sequence 2k \u002B 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD985825-97D0-4DAA-87A7-F175AAD9B985}|3. Odd Numbers\\3. Odd Numbers.csproj|c:\\users\\zenle\\source\\repos\\white loop\\3. odd numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD985825-97D0-4DAA-87A7-F175AAD9B985}|3. Odd Numbers\\3. Odd Numbers.csproj|solutionrelative:3. odd numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5A8665-9600-4D8F-978B-6664BF6D53E3}|2. Decreasing number\\2. Decreasing number.csproj|c:\\users\\zenle\\source\\repos\\white loop\\2. decreasing number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5A8665-9600-4D8F-978B-6664BF6D53E3}|2. Decreasing number\\2. Decreasing number.csproj|solutionrelative:2. decreasing number\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFCA7D75-F80B-4ED1-8C81-B3895869C0E0}|1. Numbers 1 to 100\\1. Numbers 1 to 100.csproj|c:\\users\\zenle\\source\\repos\\white loop\\1. numbers 1 to 100\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFCA7D75-F80B-4ED1-8C81-B3895869C0E0}|1. Numbers 1 to 100\\1. Numbers 1 to 100.csproj|solutionrelative:1. numbers 1 to 100\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\White loop\\7. Number Processor\\Program.cs",
+              "RelativeDocumentMoniker": "7. Number Processor\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\White loop\\7. Number Processor\\Program.cs",
+              "RelativeToolTip": "7. Number Processor\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvxkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:36:57.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\White loop\\6. Number in Range\\Program.cs",
+              "RelativeDocumentMoniker": "6. Number in Range\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\White loop\\6. Number in Range\\Program.cs",
+              "RelativeToolTip": "6. Number in Range\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:28:12.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\White loop\\5. Sum Digits\\Program.cs",
+              "RelativeDocumentMoniker": "5. Sum Digits\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\White loop\\5. Sum Digits\\Program.cs",
+              "RelativeToolTip": "5. Sum Digits\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:11:51.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\White loop\\4. Sequence 2K \u002B 1\\Program.cs",
+              "RelativeDocumentMoniker": "4. Sequence 2K \u002B 1\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\White loop\\4. Sequence 2K \u002B 1\\Program.cs",
+              "RelativeToolTip": "4. Sequence 2K \u002B 1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:08:20.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\White loop\\3. Odd Numbers\\Program.cs",
+              "RelativeDocumentMoniker": "3. Odd Numbers\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\White loop\\3. Odd Numbers\\Program.cs",
+              "RelativeToolTip": "3. Odd Numbers\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:45:28.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\White loop\\2. Decreasing number\\Program.cs",
+              "RelativeDocumentMoniker": "2. Decreasing number\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\White loop\\2. Decreasing number\\Program.cs",
+              "RelativeToolTip": "2. Decreasing number\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:43:55.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\White loop\\1. Numbers 1 to 100\\Program.cs",
+              "RelativeDocumentMoniker": "1. Numbers 1 to 100\\Program.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\White loop\\1. Numbers 1 to 100\\Program.cs",
+              "RelativeToolTip": "1. Numbers 1 to 100\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:38:56.008Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

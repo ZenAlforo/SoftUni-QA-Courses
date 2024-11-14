@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\source\\repos\\18-Unit-Testing-Arrays-Resources\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{017C4ED8-02F8-4CBF-A99D-1F3BED235BF6}|TestApp.UnitTests\\TestApp.UnitTests.csproj|c:\\users\\zenle\\source\\repos\\18-unit-testing-arrays-resources\\testapp.unittests\\primenumberfindertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017C4ED8-02F8-4CBF-A99D-1F3BED235BF6}|TestApp.UnitTests\\TestApp.UnitTests.csproj|solutionrelative:testapp.unittests\\primenumberfindertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrimeNumberFinderTests.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\source\\repos\\18-Unit-Testing-Arrays-Resources\\TestApp.UnitTests\\PrimeNumberFinderTests.cs",
+              "RelativeDocumentMoniker": "TestApp.UnitTests\\PrimeNumberFinderTests.cs",
+              "ToolTip": "C:\\Users\\zenle\\source\\repos\\18-Unit-Testing-Arrays-Resources\\TestApp.UnitTests\\PrimeNumberFinderTests.cs",
+              "RelativeToolTip": "TestApp.UnitTests\\PrimeNumberFinderTests.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:43:42.377Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

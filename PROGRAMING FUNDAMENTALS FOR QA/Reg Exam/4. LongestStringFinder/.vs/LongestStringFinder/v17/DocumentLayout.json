@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zenle\\Desktop\\4. LongestStringFinder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BA2AD57-F9BF-4DAE-9B9F-DC38D528A066}|TestApp.Tests\\TestApp.Tests.csproj|c:\\users\\zenle\\desktop\\4. longeststringfinder\\testapp.tests\\longeststringfindertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BA2AD57-F9BF-4DAE-9B9F-DC38D528A066}|TestApp.Tests\\TestApp.Tests.csproj|solutionrelative:testapp.tests\\longeststringfindertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF39A9D-AD1B-4A0D-B36F-0617DDCD9105}|TestApp\\TestApp.csproj|c:\\users\\zenle\\desktop\\4. longeststringfinder\\testapp\\longeststringfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF39A9D-AD1B-4A0D-B36F-0617DDCD9105}|TestApp\\TestApp.csproj|solutionrelative:testapp\\longeststringfinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LongestStringFinderTests.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\Desktop\\4. LongestStringFinder\\TestApp.Tests\\LongestStringFinderTests.cs",
+              "RelativeDocumentMoniker": "TestApp.Tests\\LongestStringFinderTests.cs",
+              "ToolTip": "C:\\Users\\zenle\\Desktop\\4. LongestStringFinder\\TestApp.Tests\\LongestStringFinderTests.cs",
+              "RelativeToolTip": "TestApp.Tests\\LongestStringFinderTests.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAswEEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T08:41:34.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LongestStringFinder.cs",
+              "DocumentMoniker": "C:\\Users\\zenle\\Desktop\\4. LongestStringFinder\\TestApp\\LongestStringFinder.cs",
+              "RelativeDocumentMoniker": "TestApp\\LongestStringFinder.cs",
+              "ToolTip": "C:\\Users\\zenle\\Desktop\\4. LongestStringFinder\\TestApp\\LongestStringFinder.cs",
+              "RelativeToolTip": "TestApp\\LongestStringFinder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T08:41:30.095Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
