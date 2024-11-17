@@ -1,43 +1,43 @@
-﻿namespace _6._Company_Users
+﻿using System.Runtime.InteropServices;
+
+namespace _6._Company_Users
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
             string input = Console.ReadLine();
 
-            Dictionary<string, double[]> shoppingList = new Dictionary<string, double[]>();
+            Dictionary<string, List<string>> employees = new Dictionary<string, List<string>>();
 
-            while (input != "buy")
+            while (input != "End")
             {
-                string[] productData = input.Split().ToArray();
-                string product = productData[0];
-                double price = double.Parse(productData[1]);
-                int quantity = int.Parse(productData[2]);
+                string[] employeeData = input.Split(" -> ").ToArray();
 
-                double[] quantityAndPrice = {price, quantity};
+                string companyName = employeeData[0];
+                string employeeId = employeeData[1];
 
-                if (!shoppingList.ContainsKey(product))
+                if (employees.ContainsKey(companyName) ) 
                 {
-                    shoppingList.Add(product, quantityAndPrice);
+                    if (!employees[companyName].Contains(employeeId)) {
+                        employees[companyName].Add(employeeId);
+                    }
                 } else
                 {
-                    shoppingList[product][0] = price;
-                    shoppingList[product][1] += quantity;
+                    employees.Add(companyName, new List<string>() {employeeId});
                 }
 
+
                 input = Console.ReadLine();
-                
             }
 
-            foreach (KeyValuePair<string, double[]> kvp in shoppingList)
+            foreach (string companyName in employees.Keys)
             {
-                string product = kvp.Key;
-                double price = kvp.Value[0];
-                double quantity = kvp.Value[1];
-
-                Console.WriteLine($"{product} -> {price * quantity:F2}");
+                Console.WriteLine(companyName);
+                foreach (string value in employees[companyName])
+                {
+                    Console.WriteLine($"-- {value}");
+                }
             }
         }
     }
