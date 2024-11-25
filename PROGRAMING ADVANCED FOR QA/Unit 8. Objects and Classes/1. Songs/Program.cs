@@ -29,6 +29,12 @@ namespace _1._Songs
                 {
                     Console.WriteLine(song.Name);
                 }
+            } else 
+            {
+                foreach (Song song in songList.Where(s => s.TypeList == typeList)) {
+                    Console.WriteLine(song.Name);
+                }
+
             }
         }
     }
