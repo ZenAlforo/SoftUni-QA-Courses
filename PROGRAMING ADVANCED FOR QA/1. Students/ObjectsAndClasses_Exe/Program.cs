@@ -1,7 +1,10 @@
-﻿namespace ObjectsAndClasses_Exe
+﻿using _1._Students;
+
+namespace ObjectsAndClasses_Exe
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             List<Student> students = new() { };
@@ -23,21 +26,6 @@
             {
                 Console.WriteLine($"{student.FirstName} {student.LastName}: {student.Grade:F2}");
             }
-
-        }
-
-        class Student
-        {
-            public Student(string firstName, string lastName, double grade)
-            {
-                FirstName = firstName;
-                LastName = lastName;
-                Grade = grade;
-            }
-
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public double Grade { get; set; }
         }
     }
 }
