@@ -2,12 +2,19 @@
 
 using System;
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace TestApp.UnitTests;
 
 public class PersonTests
 {
-    // TODO: write the setup method
+    public Person _person;
+
+    [SetUp]
+    public void SetUp()
+    {
+        _person = new Person();
+    }
 
     // TODO: finish test
     [Test]
@@ -15,23 +22,44 @@ public class PersonTests
     {
         // Arrange
         string[] peopleData = { "Alice A001 25", "Bob B002 30", "Alice A001 35" };
+        List<Person>expectedPeopleList = new List<Person>()
+            {
+                { new Person() {Name = "Alice", Id = "A001", Age = 35 } },
+                { new Person() {Name = "Bob", Id = "B002", Age = 30 }}
+                
+            };
 
         // Act
-        //List<Person> resultPeopleList = this._person.AddPeople(peopleData);
+        List<Person> resultPeopleList = this._person.AddPeople(peopleData);
 
         // Assert
-        //Assert.That(resultPeopleList, Has.Count.EqualTo(2));
-        //for (int i = 0; i < resultPeopleList.Count; i++)
-        //{
-        //    Assert.That(resultPeopleList[i].Name, Is.EqualTo(expectedPeopleList[i].Name));
-        //    Assert.That(resultPeopleList[i].Id, Is.EqualTo(expectedPeopleList[i].Id));
-        //    Assert.That(resultPeopleList[i].Age, Is.EqualTo(expectedPeopleList[i].Age));
-        //}
+        Assert.That(resultPeopleList, Has.Count.EqualTo(2));
+        for (int i = 0; i < resultPeopleList.Count; i++)
+        {
+            Assert.That(resultPeopleList[i].Name, Is.EqualTo(expectedPeopleList[i].Name));
+            Assert.That(resultPeopleList[i].Id, Is.EqualTo(expectedPeopleList[i].Id));
+            Assert.That(resultPeopleList[i].Age, Is.EqualTo(expectedPeopleList[i].Age));
+        }
     }
 
     [Test]
     public void Test_GetByAgeAscending_SortsPeopleByAge()
     {
-        // TODO: finish test
+        // Arrange
+        List<Person> peopleData = new List<Person>() 
+        {
+             { new Person() {Name = "Alice", Id = "A001", Age = 35 } },
+             { new Person() {Name = "Bob", Id = "B002", Age = 30 }},
+             { new Person() {Name = "Doni", Id = "B003", Age = 17 }}
+        };
+        string expectedPeopleList = $"Doni with ID: B003 is 17 years old.{Environment.NewLine}" +
+                                    $"Bob with ID: B002 is 30 years old.{Environment.NewLine}" +
+                                    $"Alice with ID: A001 is 35 years old.";
+
+        // Act
+        string resultPeopleList = this._person.GetByAgeAscending(peopleData);
+
+        // Assert
+        Assert.That(resultPeopleList, Is.EqualTo(expectedPeopleList));
     }
 }
