@@ -33,5 +33,11 @@ namespace _2._Articles
         {
             this.Title = newTitle;
         }
+
+        // override default method ToString() to get the result directly.
+        public override string ToString()
+        {
+            return $"{Title} - {Content}: {Author}";
+        }
     }
 }
