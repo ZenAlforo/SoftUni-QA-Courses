@@ -194,13 +194,35 @@ public class ExceptionTests
     [Test]
     public void Test_ParseInt_ValidInput_ReturnsParsedInteger()
     {
-        // TODO: finish test
+        // Arrange
+        string number = "333";
+        int expected = 333;
+
+        // Act
+        int result = _exceptions.FormatExceptionParseInt(number);
+
+        // Assert
+        Assert.AreEqual(expected, result);
     }
 
     [Test]
     public void Test_ParseInt_InvalidInput_ThrowsFormatException()
     {
-        // TODO: finish test
+        // Arrange
+        string input = "233klm";
+        string expected = "Input is not in the correct format for an integer.";
+
+        // Act & Assert
+        Assert.That(() => _exceptions.FormatExceptionParseInt(input), Throws.InstanceOf<FormatException>());
+
+        try
+        {
+            _exceptions.FormatExceptionParseInt(input);
+        }
+        catch (FormatException ex)
+        {
+            Assert.AreEqual(expected, ex.Message);
+        }
     }
 
     [Test]
