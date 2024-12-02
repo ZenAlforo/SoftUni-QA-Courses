@@ -254,31 +254,91 @@ public class ExceptionTests
     [Test]
     public void Test_AddNumbers_NoOverflow_ReturnsSum()
     {
-        // TODO: finish test
+        // Arrange
+        int a = 20;
+        int b = 200000;
+        int expectedSum = 200020;
+
+        // Act
+        int result = _exceptions.OverflowAddNumbers(a, b);
+
+        // Assert
+        Assert.AreEqual(expectedSum, result);
     }
 
     [Test]
     public void Test_AddNumbers_PositiveOverflow_ThrowsOverflowException()
     {
-        // TODO: finish test
+        // Arrange
+        int a = int.MaxValue;
+        int b = 1;
+        string expectedErrorMessage = "Arithmetic overflow occurred during addition.";
+
+        // Act & Asser
+        Assert.That(()=>  _exceptions.OverflowAddNumbers(a,b), Throws.TypeOf<OverflowException>());
+        try
+        {
+            _exceptions.OverflowAddNumbers(a, b);
+        }
+        catch (OverflowException ex)
+        {
+            Assert.That(ex.Message, Is.EqualTo(expectedErrorMessage));
+        }
     }
 
     [Test]
     public void Test_AddNumbers_NegativeOverflow_ThrowsOverflowException()
     {
-        // TODO: finish test
+        // Arrange
+        int a = int.MinValue;
+        int b = -1;
+        string expectedErrorMessage = "Arithmetic overflow occurred during addition.";
+
+        // Act & Asser
+        Assert.That(() => _exceptions.OverflowAddNumbers(a, b), Throws.TypeOf<OverflowException>());
+        try
+        {
+            _exceptions.OverflowAddNumbers(a, b);
+        }
+        catch (OverflowException ex)
+        {
+            Assert.That(ex.Message, Is.EqualTo(expectedErrorMessage));
+        }
     }
 
     [Test]
     public void Test_DivideNumbers_ValidDivision_ReturnsQuotient()
     {
-        // TODO: finish test
+        // Arrange
+        int a = 20;
+        int b = 2;
+        int expectedSum = 10;
+
+        // Act
+        int result = _exceptions.DivideByZeroDivideNumbers(a, b);
+
+        // Assert
+        Assert.AreEqual(expectedSum, result);
     }
 
     [Test]
     public void Test_DivideNumbers_DivideByZero_ThrowsDivideByZeroException()
     {
-        // TODO: finish test
+        // Arrange
+        int a = 212;
+        int b = 0;
+        string expectedErrorMessage = "Division by zero is not allowed.";
+
+        // Act & Asser
+        Assert.That(() => _exceptions.DivideByZeroDivideNumbers(a, b), Throws.TypeOf<DivideByZeroException>());
+        try
+        {
+            _exceptions.DivideByZeroDivideNumbers(a, b);
+        }
+        catch (DivideByZeroException ex)
+        {
+            Assert.That(ex.Message, Is.EqualTo(expectedErrorMessage));
+        }
     }
 
     [Test]
