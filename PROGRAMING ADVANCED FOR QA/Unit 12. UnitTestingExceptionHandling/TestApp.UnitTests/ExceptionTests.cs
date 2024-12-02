@@ -228,13 +228,27 @@ public class ExceptionTests
     [Test]
     public void Test_FindValueByKey_KeyExistsInDictionary_ReturnsValue()
     {
-        // TODO: finish test
+        // Arrange
+        Dictionary<string, int> keyValuePairs = new Dictionary<string, int> { {"cat", 1}, { "dog", 2 }, { "parrot", 3 } };
+        int expected = 2;
+
+        // Act
+        int result = _exceptions.KeyNotFoundFindValueByKey(keyValuePairs, "dog");
+
+        // Assert
+        Assert.AreEqual(expected, result);
     }
 
     [Test]
     public void Test_FindValueByKey_KeyDoesNotExistInDictionary_ThrowsKeyNotFoundException()
     {
-        // TODO: finish test
+        // Arrange
+        Dictionary<string, int> keyValuePairs = new Dictionary<string, int> { { "cat", 1 }, { "dog", 2 }, { "parrot", 3 } };
+        string expected = "The specified key was not found in the dictionary.";
+
+        // Act & Assert
+        var error = Assert.Throws<KeyNotFoundException>(() => _exceptions.KeyNotFoundFindValueByKey(keyValuePairs, "monkey"));
+        Assert.That(error.Message, Is.EqualTo(expected));
     }
 
     [Test]
