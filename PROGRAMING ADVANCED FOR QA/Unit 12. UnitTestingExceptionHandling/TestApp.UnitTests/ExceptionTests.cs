@@ -344,36 +344,124 @@ public class ExceptionTests
     [Test]
     public void Test_SumCollectionElements_ValidCollectionAndIndex_ReturnsSum()
     {
-        // TODO: finish test
+        // Arrange
+        int[] numbers = new int[] { 1, 2, 3, 4 };
+        int index = 3;
+        int expected = 10;
+
+
+        // Act
+        int result = _exceptions.SumCollectionElements(numbers, index);
+
+        // Assert
+        Assert.AreEqual(expected, result);
     }
 
     [Test]
     public void Test_SumCollectionElements_NullCollection_ThrowsArgumentNullException()
     {
-        // TODO: finish test
+        // Arrange
+        int[] numbers = null;
+        int index = 2;
+        string expected = "Collection cannot be null. (Parameter 'collection')";
+
+
+        // Act & Assert
+        Assert.That(() => _exceptions.SumCollectionElements(numbers, index), Throws.TypeOf<ArgumentNullException>());
+        try
+        {
+            _exceptions.SumCollectionElements(numbers, index);
+        }
+        catch (ArgumentNullException ex)
+        {
+            Assert.That(ex.Message, Is.EqualTo(expected));
+        }
     }
 
-    [Test]
-    public void Test_SumCollectionElements_IndexOutOfRange_ThrowsIndexOutOfRangeException()
+    [TestCase(-10)]
+    [TestCase(-1)]
+    [TestCase(4)]
+    [TestCase(6)]
+    [TestCase(100)]
+    public void Test_SumCollectionElements_IndexOutOfRange_ThrowsIndexOutOfRangeException(int index)
     {
-        // TODO: finish test
+        // Arrange
+        int[] numbers = new int[] { 1, 2, 3, 4 };
+        string expected = "Index has to be within bounds.";
+
+        // Act & Assert
+        Assert.That(() => _exceptions.SumCollectionElements(numbers, index), Throws.TypeOf<IndexOutOfRangeException>());
+        try
+        {
+            _exceptions.SumCollectionElements(numbers, index);
+        }
+        catch (IndexOutOfRangeException ex)
+        {
+            Assert.That(ex.Message, Is.EqualTo(expected));
+        }
     }
 
     [Test]
     public void Test_GetElementAsNumber_ValidKey_ReturnsParsedNumber()
     {
-        // TODO: finish test
+        // Arrange
+        Dictionary<string, string> testDict = new Dictionary<string, string>()
+        {
+            ["five"] = "2",
+            ["cat"] = "green",
+            ["length"] = "1200m"
+        };
+
+        string key = "five";
+        int expected = 2;
+
+        // Act
+        int result = _exceptions.GetElementAsNumber(testDict, key);
+
+        // Assert
+        Assert.That(expected, Is.EqualTo(result));  
     }
 
     [Test]
     public void Test_GetElementAsNumber_KeyNotFound_ThrowsKeyNotFoundException()
     {
-        // TODO: finish test
+        // Arrange
+        Dictionary<string, string> testDict = new Dictionary<string, string>()
+        {
+            ["five"] = "2",
+            ["cat"] = "green",
+            ["length"] = "1200m"
+        };
+
+        string key = "dog";
+        string expectedErrorMessage = "Key not found in the dictionary.";
+
+        // Act & Assert
+        
+        var error = Assert.Throws<KeyNotFoundException> (() => _exceptions.GetElementAsNumber(testDict, key));
+        Assert.AreEqual(expectedErrorMessage, error.Message);
+
     }
 
     [Test]
     public void Test_GetElementAsNumber_InvalidFormat_ThrowsFormatException()
     {
-        // TODO: finish test
+        // Arrange
+        Dictionary<string, string> testDict = new Dictionary<string, string>()
+        {
+            ["five"] = "2",
+            ["cat"] = "green",
+            ["length"] = "1200m"
+        };
+
+        string key = "cat";
+        string expectedErrorMessage = "Can't parse string.";
+
+        // Act & Assert
+
+        var error = Assert.Throws<FormatException>(() => _exceptions.GetElementAsNumber(testDict, key));
+        Assert.AreEqual(expectedErrorMessage, error.Message);
+        Assert.That(error.Message, Is.EqualTo(expectedErrorMessage));
+        Assert.IsTrue(error.Message.Contains(expectedErrorMessage));
     }
 }
