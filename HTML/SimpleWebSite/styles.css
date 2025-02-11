@@ -1,0 +1,12 @@
+p.firstRow {
+    color: blueviolet;
+}
+
+p {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+p#getReady {
+    color: red;
+}
