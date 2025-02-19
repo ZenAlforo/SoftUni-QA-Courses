@@ -7,7 +7,7 @@ namespace MoviesLibraryAPI.Controllers.Contracts
         Task AddAsync(Movie movie);
         Task<IEnumerable<Movie>> GetAllAsync();
         Task<Movie> GetByTitle(string title);
-        Task<IEnumerable<Movie>> SearchByTitleAsync(string titleFragment);
+        Task<IEnumerable<Movie>> SearchByTitleFragmentAsync(string titleFragment);
         Task UpdateAsync(Movie movie);
         Task DeleteAsync(string title);
     }

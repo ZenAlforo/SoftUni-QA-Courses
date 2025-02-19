@@ -1,7 +1,6 @@
 ﻿using MoviesLibraryAPI.Controllers.Contracts;
 using MoviesLibraryAPI.Data.Models;
 using MoviesLibraryAPI.Services.Contracts;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace MoviesLibraryAPI.Controllers
@@ -52,7 +51,7 @@ namespace MoviesLibraryAPI.Controllers
             return movie;
         }
 
-        public async Task<IEnumerable<Movie>> SearchByTitleAsync(string titleFragment)
+        public async Task<IEnumerable<Movie>> SearchByTitleFragmentAsync(string titleFragment)
         {
             var movies = await _moviesRepository.GetMoviesByTitleAsync(titleFragment);
 

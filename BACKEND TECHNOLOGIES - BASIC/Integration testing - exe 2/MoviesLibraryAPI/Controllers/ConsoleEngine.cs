@@ -196,7 +196,7 @@ namespace LibroConsoleAPI.Business
                 {
                     Console.Write("Enter title or part of the title: ");
                     string titleFragment = Console.ReadLine();
-                    var movies = await controller.SearchByTitleAsync(titleFragment);
+                    var movies = await controller.SearchByTitleFragmentAsync(titleFragment);
 
                     if (movies.Any())
                     {
