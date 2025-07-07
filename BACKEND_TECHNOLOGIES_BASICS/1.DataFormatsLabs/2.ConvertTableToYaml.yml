@@ -1,0 +1,42 @@
+- Country: Switzerland
+  Capital: Bern
+  Population: 8.5
+  Languages:
+    - German
+    - French
+    - Italian
+    - Romansh
+
+- Country: Canada
+  Capital: Otawa
+  Population: 38
+  Languages:
+    - English
+    - French
+
+- Country: Belgium
+  Capital: Brussels
+  Population: 11.5
+  Languages:
+    - German
+    - French
+    - Dutch
+
+- Country: South Africa
+  Capital: Pretoria
+  Population: 59.3
+  Languages:
+    - Zulu
+    - Xhosa
+    - Afrikaans
+    - Others
+
+- Country: India
+  Capital: New Delhi
+  Population: 1380
+  Languages:
+    - Hindi
+    - Tamil
+    - Telugu
+    - Urdu
+    - Others
