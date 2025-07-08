@@ -15,7 +15,7 @@ function getResult(firstNum, secondNum, operator) {
 		case "**": result = firstNum ** secondNum;
 			break;
 
-		default:
+		default: result = "Error!"
 			break;
 	}
 
