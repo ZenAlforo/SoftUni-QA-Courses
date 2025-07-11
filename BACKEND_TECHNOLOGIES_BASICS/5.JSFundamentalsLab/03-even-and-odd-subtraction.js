@@ -1,0 +1,7 @@
+function getResultsEvenSumMinusOddSum(myArray) {
+    
+
+
+}
+
+getResultsEvenSumMinusOddSum()
