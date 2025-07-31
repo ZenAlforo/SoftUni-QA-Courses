@@ -1,19 +1,23 @@
-using LibroConsoleAPI.Business;
+﻿using LibroConsoleAPI.Business;
 using LibroConsoleAPI.Business.Contracts;
 using LibroConsoleAPI.Data.Models;
-using LibroConsoleAPI.DataAccess;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace LibroConsoleAPI.IntegrationTests
+namespace LibroConsoleAPI.IntegrationTests.XUnit
 {
-    public class IntegrationTests : IClassFixture<BookManagerFixture>
+    public class AddBookMethodTests : IClassFixture<BookManagerFixture>
     {
         private readonly BookManagerFixture _fixture;
         private readonly BookManager _bookManager;
         private readonly TestLibroDbContext _dbContext;
 
-        public IntegrationTests()
+        public AddBookMethodTests()
         {
             _fixture = new BookManagerFixture();
             _bookManager = _fixture.BookManager;
@@ -45,13 +49,18 @@ namespace LibroConsoleAPI.IntegrationTests
             Assert.Equal("John Doe", bookInDb.Author);
         }
 
-        [Fact]
-        public async Task AddBookAsync_TryToAddBookWithInvalidTitle_ShouldThrowException()
+       
+        [Theory]
+        [InlineData(null)]
+        [InlineData("51651511515151515151515151516515165165165165165165165651651651651561651651651651516516516515616516516515616516516515615615615615165165165516516516516516516516516516515615156151561651561561651651515616515616515616515616515165165165165165156165156165156156156165156151515165156165165151651")]
+        [InlineData("")]
+
+        public async Task AddBookAsync_TryToAddBookWithInvalidTitle_ShouldThrowException(string title)
         {
             // Arrange
             var newBook = new Book
             {
-                Title = new string('x', 260),
+                Title = title,
                 Author = "John Doe",
                 ISBN = "1234567890123",
                 YearPublished = 2021,
@@ -67,14 +76,17 @@ namespace LibroConsoleAPI.IntegrationTests
             Assert.Null(bookInDb);
         }
 
-        [Fact]
-        public async Task AddBookAsync_TryToAddBookWithInvalidAuthor_ShouldThrowException()
+        [Theory]
+        [InlineData(null)]
+        [InlineData("51651511515151515151515151516515165165165165165165165651651651651561651651651651516516516515616516516515616516516515615615615615165165165516516516516516516516516516515615156151561651561561651651515616515616515616515616515165165165165165156165156165156156156165156151515165156165165151651")]
+        [InlineData("")]
+        public async Task AddBookAsync_TryToAddBookWithInvalidAuthor_ShouldThrowException(string author)
         {
             // Arrange
             var newBook = new Book
             {
                 Title = "New Book",
-                Author = new string('a', 120),
+                Author = author,
                 ISBN = "1234567890123",
                 YearPublished = 2021,
                 Genre = "Fiction",
@@ -90,15 +102,18 @@ namespace LibroConsoleAPI.IntegrationTests
 
         }
 
-        [Fact]
-        public async Task AddBookAsync_TryToAddBookWithInvalidISBN_ShouldThrowException()
+        [Theory]
+        [InlineData(null)]
+        [InlineData("51651511515151515151515151511")]
+        [InlineData("")]
+        public async Task AddBookAsync_TryToAddBookWithInvalidISBN_ShouldThrowException(string isbn)
         {
             // Arrange
             var newBook = new Book
             {
                 Title = "New Book",
                 Author = "Samuel",
-                ISBN = "sadasda",
+                ISBN = isbn,
                 YearPublished = 2021,
                 Genre = "Fiction",
                 Pages = 100,
@@ -112,8 +127,12 @@ namespace LibroConsoleAPI.IntegrationTests
             Assert.Null(bookInDb);
         }
 
-        [Fact]
-        public async Task AddBookAsync_TryToAddBookWithInvalidYear_ShouldThrowException()
+        [Theory]
+        [InlineData(-2000)]
+        [InlineData(1655)]
+        [InlineData(2025)]
+        //[InlineData(2002.29)]
+        public async Task AddBookAsync_TryToAddBookWithInvalidYear_ShouldThrowException(int year)
         {
             // Arrange
             var newBook = new Book
@@ -121,21 +140,25 @@ namespace LibroConsoleAPI.IntegrationTests
                 Title = "New Book",
                 Author = "Samuel",
                 ISBN = "1234567891012",
-                YearPublished = -2000,
+                YearPublished = year,
                 Genre = "Fiction",
                 Pages = 100,
                 Price = 19.99
             };
 
             // Act & Assert
-            var ex = Assert.ThrowsAsync<ValidationException>(() => _bookManager.AddAsync(newBook));
-            Assert.Equal("Book is invalid.", ex.Result.Message);
+            var ex = await Assert.ThrowsAsync<ValidationException>(() => _bookManager.AddAsync(newBook));
+            Assert.Equal("Book is invalid.", ex.Message);
             var bookInDb = await _dbContext.Books.FirstOrDefaultAsync();
             Assert.Null(bookInDb);
         }
 
-        [Fact]
-        public async Task AddBookAsync_TryToAddBookWithInvalidGenre_ShouldThrowException()
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        [InlineData("adsadsadjajdadahdjlsahdjsahdhadhahdadahsjdsajhdjahdahldahdajhdjadjahdaha")]
+
+        public async Task AddBookAsync_TryToAddBookWithInvalidGenre_ShouldThrowException(string genre)
         {
             // Arrange
             var newBook = new Book
@@ -144,7 +167,7 @@ namespace LibroConsoleAPI.IntegrationTests
                 Author = "Samuel",
                 ISBN = "1234567891012",
                 YearPublished = 2000,
-                Genre = "",
+                Genre = genre,
                 Pages = 100,
                 Price = 19.99
             };
@@ -156,8 +179,10 @@ namespace LibroConsoleAPI.IntegrationTests
             Assert.Null(bookInDb);
         }
 
-        [Fact]
-        public async Task AddBookAsync_TryToAddBookWithInvalidPages_ShouldThrowException()
+        [Theory]
+        [InlineData(-20)]
+        [InlineData(0)]
+        public async Task AddBookAsync_TryToAddBookWithInvalidPages_ShouldThrowException(int pages)
         {
             // Arrange
             var newBook = new Book
@@ -167,7 +192,7 @@ namespace LibroConsoleAPI.IntegrationTests
                 ISBN = "1234567891012",
                 YearPublished = 2000,
                 Genre = "Fantasy",
-                Pages = -50,
+                Pages = pages,
                 Price = 19.99
             };
 
@@ -178,8 +203,12 @@ namespace LibroConsoleAPI.IntegrationTests
             Assert.Null(bookInDb);
         }
 
-        [Fact]
-        public async Task AddBookAsync_TryToAddBookWithInvalidPrice_ShouldThrowException()
+        [Theory]
+        [InlineData(-20.5)]
+        [InlineData(1500)]
+        [InlineData(0)]
+        [InlineData(2002.29)]
+        public async Task AddBookAsync_TryToAddBookWithInvalidPrice_ShouldThrowException(double price)
         {
             // Arrange
             var newBook = new Book
@@ -199,93 +228,5 @@ namespace LibroConsoleAPI.IntegrationTests
             var bookInDb = await _dbContext.Books.FirstOrDefaultAsync();
             Assert.Null(bookInDb);
         }
-
-        [Fact]
-        public async Task DeleteBookAsync_WithValidISBN_ShouldRemoveBookFromDb()
-        {
-            // Arrange
-            await DatabaseSeeder.SeedDatabaseAsync(_dbContext, _bookManager);
-
-            // Act
-            await _bookManager.DeleteAsync("9780385487256");
-
-            // Assert
-            var booksInDb = _dbContext.Books.ToList();
-            Assert.Equal(booksInDb.Count, 9);
-            Assert.False(booksInDb.Any(b => b.ISBN == "9780385487256"));
-        }
-
-
-        [Fact]
-        public async Task DeleteBookAsync_TryToDeleteWithNullOrWhiteSpaceISBN_ShouldThrowException()
-        {
-            // Arrange
-            await DatabaseSeeder.SeedDatabaseAsync(_dbContext, _bookManager);
-
-            // Act
-            var ex = Assert.ThrowsAsync<ArgumentException>(() => _bookManager.DeleteAsync(""));
-
-            // Assert
-            var booksInDb = _dbContext.Books.ToList();
-            //Assert.Equal(ex.Result.Message, "ISBN cannot be empty.");
-        }
-
-
-        [Fact]
-        public async Task GetAllAsync_WhenBooksExist_ShouldReturnAllBooks()
-        {
-            throw new NotImplementedException();
-        }
-
-         
-        [Fact]
-        public async Task GetAllAsync_WhenNoBooksExist_ShouldThrowKeyNotFoundException()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        [Fact]
-        public async Task SearchByTitleAsync_WithValidTitleFragment_ShouldReturnMatchingBooks()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        [Fact]
-        public async Task SearchByTitleAsync_WithInvalidTitleFragment_ShouldThrowKeyNotFoundException()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        [Fact]
-        public async Task GetSpecificAsync_WithValidIsbn_ShouldReturnBook()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        [Fact]
-        public async Task GetSpecificAsync_WithInvalidIsbn_ShouldThrowKeyNotFoundException()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        [Fact]
-        public async Task UpdateAsync_WithValidBook_ShouldUpdateBook()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        [Fact]
-        public async Task UpdateAsync_WithInvalidBook_ShouldThrowValidationException()
-        {
-            throw new NotImplementedException();
-        }
-
-
     }
 }
