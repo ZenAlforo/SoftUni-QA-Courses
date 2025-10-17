@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Nums 1 ... 50";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>@ViewBag.Message</p>
+<ul>
+    @for(int i = 1; i <= 50; i++)
+    {
+        <li>
+            @i
+        </li>
+    }
+</ul>
