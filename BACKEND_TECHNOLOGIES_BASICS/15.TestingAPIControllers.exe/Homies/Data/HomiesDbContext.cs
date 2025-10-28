@@ -9,12 +9,11 @@ namespace Homies.Data
     {
         public HomiesDbContext()
         {
-            
         }
+
         public HomiesDbContext(DbContextOptions<HomiesDbContext> options)
             : base(options)
         {
-
         }
 
         public virtual DbSet<Type> Types { get; set; }
