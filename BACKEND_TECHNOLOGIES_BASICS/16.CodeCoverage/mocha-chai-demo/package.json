@@ -1,0 +1,40 @@
+{
+  "name": "mocha-chai-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "cross-env NODE_OPTIONS=\"--experimental-loader=@istanbuljs/esm-loader-hook --no-warnings\" nyc mocha"
+  },
+  "devDependencies": {
+    "@istanbuljs/esm-loader-hook": "^0.2.0",
+    "chai": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.2.0",
+    "nyc": "^17.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "extension": [
+      ".js",
+      ".mjs"
+    ],
+    "exclude": [
+      "test/**",
+      "coverage/**",
+      "**/*.spec.js",
+      "**/*.test.js",
+      "node_modules/**"
+    ],
+    "include": [
+      "src/**/*.js"
+    ],
+    "all": true,
+    "sourceMap": false,
+    "instrument": true
+  }
+}
