@@ -1,0 +1,22 @@
+{
+  "name": "js-jest-demo",
+  "version": "1.0.0",
+  "description": "Demo project using Jest and Chai for testing",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+  },
+  "dependencies": {
+    "chai": "^5.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

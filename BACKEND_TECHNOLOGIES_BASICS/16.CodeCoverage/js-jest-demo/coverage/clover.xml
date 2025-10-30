@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1761847822518" clover="3.2.0">
+  <project timestamp="1761847822518" name="All files">
+    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="4" coveredelements="4" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
+    <file name="index.js" path="C:\Users\zenle\source\QA_SoftUni_Repo\SoftUni-QA-Courses\BACKEND_TECHNOLOGIES_BASICS\16.CodeCoverage\js-jest-demo\src\index.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+    </file>
+  </project>
+</coverage>

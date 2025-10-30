@@ -1,0 +1,15 @@
+TN:
+SF:src\index.js
+FN:1,add
+FN:5,subtract
+FNF:2
+FNH:2
+FNDA:3,add
+FNDA:5,subtract
+DA:2,3
+DA:6,5
+LF:2
+LH:2
+BRF:0
+BRH:0
+end_of_record
