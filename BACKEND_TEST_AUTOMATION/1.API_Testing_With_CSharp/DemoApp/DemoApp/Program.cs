@@ -3,10 +3,11 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private static void Main(string[]  args)
     {
         WeatherForecast weatherForecast = new WeatherForecast()
         {
@@ -15,26 +16,37 @@ internal class Program
             Summary = "Hot and dry summer weather"
         };
 
-        string weatherForecastJsonViaText = System.Text.Json.JsonSerializer.Serialize(weatherForecast);
+        //string weatherForecastJsonViaText = System.Text.Json.JsonSerializer.Serialize(weatherForecast);
 
-        string weatherForecastJsonViaNewton = JsonConvert.SerializeObject(weatherForecast);
+        //string weatherForecastJsonViaNewton = JsonConvert.SerializeObject(weatherForecast);
 
-        Console.WriteLine(weatherForecastJsonViaText);
-        Console.WriteLine(weatherForecastJsonViaNewton);
+        //Console.WriteLine(weatherForecastJsonViaText);
+        //Console.WriteLine(weatherForecastJsonViaNewton);
 
-        string jsonString = File.ReadAllText(Path.Combine(Environment.CurrentDirectory) + "/../../../../../JsonForecast.json");
+        //string jsonString = File.ReadAllText(Path.Combine(Environment.CurrentDirectory) + "/../../../../../JsonForecast.json");
 
-        var weatherForecastObjectUsingTextJson = System.Text.Json.JsonSerializer.Deserialize<List<WeatherForecast>>(jsonString);
-        var weatherForecastObjectUsingNewtonJson = JsonConvert.DeserializeObject<List<WeatherForecast>>(jsonString);
+        //var weatherForecastObjectUsingTextJson = System.Text.Json.JsonSerializer.Deserialize<List<WeatherForecast>>(jsonString);
+        //var weatherForecastObjectUsingNewtonJson = JsonConvert.DeserializeObject<List<WeatherForecast>>(jsonString);
 
-        foreach (var item in weatherForecastObjectUsingTextJson)
+        //foreach (var item in weatherForecastObjectUsingTextJson)
+        //{
+        //    Console.WriteLine($"The weather on {item.Date} was {item.Summary} and the temperature was {item.TemperatureCelsius}");
+        //}
+
+        //foreach (var item in weatherForecastObjectUsingNewtonJson)
+        //{
+        //    Console.WriteLine($"The weather on {item.Date} was {item.Summary} and the temperature was {item.TemperatureCelsius}");
+        //}
+
+        DefaultContractResolver contractResolver = new DefaultContractResolver()
         {
-            Console.WriteLine($"The weather on {item.Date} was {item.Summary} and the temperature was {item.TemperatureCelsius}");
-        }
+            NamingStrategy = new SnakeCaseNamingStrategy()
+        };
 
-        foreach (var item in weatherForecastObjectUsingNewtonJson)
+        var serialized = JsonConvert.SerializeObject(weatherForecast, new JsonSerializerSettings()
         {
-            Console.WriteLine($"The weather on {item.Date} was {item.Summary} and the temperature was {item.TemperatureCelsius}");
-        }
+            ContractResolver = contractResolver, 
+            Formatting = Formatting.Indented,
+        });
     }
 }
