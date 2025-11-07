@@ -16,7 +16,7 @@ namespace RestSharpTestProject
             var options = new RestClientOptions("https://api.github.com")
             {
                 Timeout = TimeSpan.FromMilliseconds(3000),
-                Authenticator = new HttpBasicAuthenticator("ZenAlforo", "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")
+                Authenticator = new HttpBasicAuthenticator("ZenAlforo", "API_KEY")
             };
 
             client = new RestClient(options);
