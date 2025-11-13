@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "8dd29fe3-d6aa-4a8b-9708-de7db6ebdb01",
+		"name": "EventMiApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31587910"
+	},
+	"item": [
+		{
+			"name": "Happy Paths",
+			"item": [
+				{
+					"name": "Get All Events",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Event/All",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Event",
+								"All"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Add Events View",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Event/Add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Event",
+								"Add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Event",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response contains the event name\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Test event via Postman\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{tokenRepoGit}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "ZenAlforo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Name",
+									"value": "Test event via Postman",
+									"type": "text"
+								},
+								{
+									"key": "Place",
+									"value": "Sofia",
+									"type": "text"
+								},
+								{
+									"key": "Start",
+									"value": "13/11/2025 21:37",
+									"type": "text"
+								},
+								{
+									"key": "End",
+									"value": "14/11/2025 21:37",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Event/Add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Event",
+								"Add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							"pm.test(\"Response should return code 200\", () => {\r",
+							"    pm.expect(pm.response.code, \"The status code was not as expected\").to.eql(200)\r",
+							"})"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Not Found Paths",
+			"item": [
+				{
+					"name": "Get Details View Should Return Not Found",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": ""
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
