@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "f62729f4-15ca-41e9-98fe-e6e1bf93fd54",
+		"_postman_id": "e996083e-33c2-4fe9-8078-6fe5aad4d028",
 		"name": "TrelloAPIInitialCollection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "479818"
+		"_exporter_id": "31587910"
 	},
 	"item": [
 		{
@@ -15,16 +15,30 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				},
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"pm.test(\"Status code should be 200\", ()=> {\r",
+							"    pm.response.to.have.status(200)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time should be less than 30s\", ()=> {\r",
+							"    pm.expect(pm.response.responseTime).to.be.lessThan(30000)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Response body should not be empty\", ()=> {\r",
+							"    pm.expect(pm.response.text()).to.not.be.empty;\r",
+							"})"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -32,12 +46,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/members/me/boards?key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/members/me/boards?key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
@@ -48,11 +59,11 @@
 					"query": [
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -66,14 +77,23 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"pm.collectionVariables.set(\"boardId\", pm.response.json().id);\r",
 							"\r",
+							"pm.test(\"Status code should be 200\", ()=> {\r",
+							"    pm.response.to.have.status(200)\r",
+							"});\r",
 							"\r",
+							"const responseData = pm.response.json();\r",
 							"\r",
-							"\r",
+							"pm.test(\"Board name should be 'PostmanAPITestingBoard'\", ()=> {\r",
+							"    pm.expect(responseData.name).to.equal('PostmanAPITestingBoard')\r",
+							"});\r",
 							"\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -90,12 +110,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://api.trello.com/1/boards/?name={name}&key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/boards/?name=PostmanAPITestingBoard&key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
@@ -105,15 +122,15 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "{name}"
+							"value": "PostmanAPITestingBoard"
 						},
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -127,11 +144,24 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"const responseData = pm.response.json()\r",
+							"\r",
+							"pm.test(\"Status code should be 200\", ()=> {\r",
+							"    pm.response.to.have.status(200)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should return the board created with the same name\", ()=> {\r",
+							"    pm.expect(responseData).to.have.property(\"name\");\r",
+							"    pm.expect(responseData.name).to.eql(\"PostmanAPITestingBoard\");\r",
+							"    pm.expect(responseData.name).to.be.string;\r",
+							"})\r",
 							"\r",
 							"\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -151,26 +181,23 @@
 					}
 				},
 				"url": {
-					"raw": "https://api.trello.com/1/boards/{id}?key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/boards/{{boardId}}?key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
 						"boards",
-						"{id}"
+						"{{boardId}}"
 					],
 					"query": [
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -184,10 +211,28 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"const responseData = pm.response.json();\r",
+							"var expectedBoardId = pm.collectionVariables.get(\"boardId\") // Assuming boardId is stored in environment variables\r",
 							"\r",
-							""
+							"pm.test(\"Status code should be 200\", ()=> {\r",
+							"    pm.response.to.have.status(200)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response has all the expected properties\", ()=> {\r",
+							"    pm.expect(responseData).to.have.all.keys(\"id\", \"name\", \"closed\", \"color\", \"idBoard\", \"pos\", \"type\", \"datasource\", \"limits\")\r",
+							"});\r",
+							"\r",
+							"pm.test(\"'Closed' is false and of type 'boolean'\", ()=> {\r",
+							"    pm.expect(responseData.closed).to.be.a('boolean').and.to.equal(false)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"'idBoard' matches expected board ID\", ()=> {\r",
+							"    pm.expect(responseData.idBoard).to.eql(expectedBoardId);\r",
+							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -195,31 +240,28 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/boards/{id}/lists?name=name&key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/boards/{{boardId}}/lists?name=To Do...&key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
 						"boards",
-						"{id}",
+						"{{boardId}}",
 						"lists"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "name"
+							"value": "To Do..."
 						},
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -227,24 +269,43 @@
 			"response": []
 		},
 		{
-			"name": "Create DONE List",
+			"name": "Create Unique Name List",
 			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
 				{
 					"listen": "prerequest",
 					"script": {
 						"exec": [
+							"var uniqueName = \"List\" + Math.floor(Math.random() * 100000);\r",
+							"pm.collectionVariables.set(\"uniqueListName\", uniqueName);\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"const responseJson = pm.response.json();\r",
+							"pm.collectionVariables.set(\"uniqueListId\", responseJson.id);\r",
+							"const expectedListName = pm.collectionVariables.get(\"uniqueListName\");\r",
+							"\r",
+							"pm.test(\"Status code should be 200\", ()=> {\r",
+							"    pm.response.to.have.status(200)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"List name is matching the lastly created one\", ()=> {\r",
+							"    pm.expect(responseJson.name).to.eql(expectedListName);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -252,31 +313,28 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/boards/{id}/lists?name=name&key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/boards/{{boardId}}/lists?name={{uniqueListName}}&key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
 						"boards",
-						"{id}",
+						"{{boardId}}",
 						"lists"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "name"
+							"value": "{{uniqueListName}}"
 						},
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -290,9 +348,29 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"pm.collectionVariables.set(\"toDoListId\", pm.response.json()[1].id);\r",
+							"pm.collectionVariables.set(\"doneListId\", pm.response.json()[0].id);\r",
+							"\r",
+							"const responseData = pm.response.json();\r",
+							"var createdListName = pm.collectionVariables.get(\"uniqueListName\");\r",
+							"var listName = responseData.map(list => list.name);\r",
+							"\r",
+							"pm.test(\"Status code should be 200\", ()=> {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Response is not an empty Array\", ()=> {\r",
+							"    pm.expect(responseData).to.not.be.empty;\r",
+							"    pm.expect(responseData).to.be.an('array');\r",
+							"})\r",
+							"\r",
+							"pm.test(\"List names should be unique\", () => {\r",
+							"    pm.expect(listName).to.include(createdListName)\r",
+							"})"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -300,27 +378,24 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/boards/{id}/lists?key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/boards/{{boardId}}/lists?key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
 						"boards",
-						"{id}",
+						"{{boardId}}",
 						"lists"
 					],
 					"query": [
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -334,9 +409,40 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"pm.collectionVariables.set(\"lastCardCreatedId\", pm.response.json().id);\r",
+							"\r",
+							"const responseData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Response status code should be 200\", ()=> {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Card name should be 'CreateLoginPage'\", () => {\r",
+							"    pm.expect(responseData.name).to.eql(\"CreateLoginPage\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Labels and attachments should be empty\", ()=> {\r",
+							"    pm.expect(responseData.labels).to.be.empty;\r",
+							"    pm.expect(responseData.attachments).to.be.empty;\r",
+							"})\r",
+							"\r",
+							"\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -344,12 +450,9 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/cards?idList=id&name=name&key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/cards?idList={{toDoListId}}&name=CreateLoginPage&key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
@@ -358,19 +461,19 @@
 					"query": [
 						{
 							"key": "idList",
-							"value": "id"
+							"value": "{{toDoListId}}"
 						},
 						{
 							"key": "name",
-							"value": "name"
+							"value": "CreateLoginPage"
 						},
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -378,16 +481,31 @@
 			"response": []
 		},
 		{
-			"name": "Move Card to DONE",
+			"name": "Move Card to Unique Name List",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"const responseData = pm.response.json();\r",
+							"const cardId = pm.collectionVariables.get(\"lastCardCreatedId\")\r",
+							"const expectedListToMove = pm.collectionVariables.get(\"uniqueListId\");\r",
+							"\r",
+							"pm.test(\"Response status code should be 200\", ()=> {\r",
+							"    pm.expect(pm.response.code).to.eql(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Card Id is correct'\", () => {\r",
+							"    pm.expect(responseData.id).to.eql(cardId);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"The card is moved to the correct list'\", () => {\r",
+							"    pm.expect(responseData.idList).to.eql(expectedListToMove);\r",
+							"})"
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -395,30 +513,27 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/cards/{id}?idList=id&key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/cards/{{lastCardCreatedId}}?idList={{uniqueListId}}&key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
 						"cards",
-						"{id}"
+						"{{lastCardCreatedId}}"
 					],
 					"query": [
 						{
 							"key": "idList",
-							"value": "id"
+							"value": "{{uniqueListId}}"
 						},
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -432,9 +547,21 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"const responseData = pm.response.json();   \r",
+							"\r",
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"'Limists' property exist and is an empty object\", function () {\r",
+							"    pm.expect(responseData).to.have.property('limits');\r",
+							"    pm.expect(responseData.limits).to.be.an('object');\r",
+							"    pm.expect(responseData.limits).to.be.empty;\r",
+							"})"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -442,26 +569,23 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/cards/{id}?key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/cards/{{lastCardCreatedId}}?key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
 						"cards",
-						"{id}"
+						"{{lastCardCreatedId}}"
 					],
 					"query": [
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -475,9 +599,21 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"\r",
+							"const responseData = pm.response.json();   \r",
+							"\r",
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"There is an elementh '_value'\", function () {\r",
+							"    pm.expect(responseData).to.have.property('_value');\r",
+							"    pm.expect(responseData._value).to.be.null;\r",
+							"})"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -485,26 +621,23 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/boards/{id}?key=APIKey&token=APIToken",
-					"protocol": "https",
+					"raw": "{{baseURL}}/1/boards/{{boardId}}?key={{trelloKey}}&token={{trelloToken}}",
 					"host": [
-						"api",
-						"trello",
-						"com"
+						"{{baseURL}}"
 					],
 					"path": [
 						"1",
 						"boards",
-						"{id}"
+						"{{boardId}}"
 					],
 					"query": [
 						{
 							"key": "key",
-							"value": "APIKey"
+							"value": "{{trelloKey}}"
 						},
 						{
 							"key": "token",
-							"value": "APIToken"
+							"value": "{{trelloToken}}"
 						}
 					]
 				}
@@ -517,6 +650,7 @@
 			"listen": "prerequest",
 			"script": {
 				"type": "text/javascript",
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -526,10 +660,49 @@
 			"listen": "test",
 			"script": {
 				"type": "text/javascript",
+				"requests": {},
 				"exec": [
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": ""
+		},
+		{
+			"key": "trelloKey",
+			"value": ""
+		},
+		{
+			"key": "trelloToken",
+			"value": ""
+		},
+		{
+			"key": "boardId",
+			"value": ""
+		},
+		{
+			"key": "toDoListId",
+			"value": ""
+		},
+		{
+			"key": "doneListId",
+			"value": ""
+		},
+		{
+			"key": "lastCardCreatedId",
+			"value": ""
+		},
+		{
+			"key": "uniqueListName",
+			"value": ""
+		},
+		{
+			"key": "uniqueListId",
+			"value": ""
 		}
 	]
 }
