@@ -670,39 +670,39 @@
 	"variable": [
 		{
 			"key": "baseURL",
-			"value": ""
+			"value": "https://api.trello.com"
 		},
 		{
 			"key": "trelloKey",
-			"value": ""
+			"value": "d9fbcfdb28e0ce8428a48fa1f4d43a54"
 		},
 		{
 			"key": "trelloToken",
-			"value": ""
+			"value": "ATTA4168914a79d92d8163d7198a759ab7c96a181f05e1c7212b80896a1874920d0c1E140CAE"
 		},
 		{
 			"key": "boardId",
-			"value": ""
+			"value": "691b6c45ef572e1ddd2d903b"
 		},
 		{
 			"key": "toDoListId",
-			"value": ""
+			"value": "691b6c4def70292817bf52b2"
 		},
 		{
 			"key": "doneListId",
-			"value": ""
+			"value": "691b6c512c27685ed58d919f"
 		},
 		{
 			"key": "lastCardCreatedId",
-			"value": ""
+			"value": "691b6c5a04e2df75889c721e"
 		},
 		{
 			"key": "uniqueListName",
-			"value": ""
+			"value": "List26835"
 		},
 		{
 			"key": "uniqueListId",
-			"value": ""
+			"value": "691b6c512c27685ed58d919f"
 		}
 	]
 }

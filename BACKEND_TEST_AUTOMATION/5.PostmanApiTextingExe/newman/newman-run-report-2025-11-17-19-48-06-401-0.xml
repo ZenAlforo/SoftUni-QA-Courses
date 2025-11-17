@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TrelloAPIInitialCollection" tests="10" time="3.988">
+  <testsuite name="Get All Boards" id="32ec00a1-ae1c-40a7-8f2b-5b488ce1b262" timestamp="2025-11-17T19:48:01.577Z" tests="3" failures="0" errors="0" time="0.317">
+    <testcase name="Status code should be 200" time="0.317" classname="GetAllBoards"/>
+    <testcase name="Response time should be less than 30s" time="0.317" classname="GetAllBoards"/>
+    <testcase name="Response body should not be empty" time="0.317" classname="GetAllBoards"/>
+  </testsuite>
+  <testsuite name="Create a Board" id="2bf504f1-fc18-4dd2-a6e6-08538e7905c9" timestamp="2025-11-17T19:48:01.577Z" tests="2" failures="0" errors="0" time="0.470">
+    <testcase name="Status code should be 200" time="0.470" classname="CreateABoard"/>
+    <testcase name="Board name should be 'PostmanAPITestingBoard'" time="0.470" classname="CreateABoard"/>
+  </testsuite>
+  <testsuite name="Get Single Board" id="b0bbabdd-cac3-4514-8364-198a9edb2eb4" timestamp="2025-11-17T19:48:01.577Z" tests="2" failures="0" errors="0" time="0.298">
+    <testcase name="Status code should be 200" time="0.298" classname="GetSingleBoard"/>
+    <testcase name="Response should return the board created with the same name" time="0.298" classname="GetSingleBoard"/>
+  </testsuite>
+  <testsuite name="Create TO DO list" id="4baac23f-474b-4895-8a5b-ea178523b557" timestamp="2025-11-17T19:48:01.577Z" tests="4" failures="0" errors="0" time="0.394">
+    <testcase name="Status code should be 200" time="0.394" classname="CreateToDoList"/>
+    <testcase name="Response has all the expected properties" time="0.394" classname="CreateToDoList"/>
+    <testcase name="'Closed' is false and of type 'boolean'" time="0.394" classname="CreateToDoList"/>
+    <testcase name="'idBoard' matches expected board ID" time="0.394" classname="CreateToDoList"/>
+  </testsuite>
+  <testsuite name="Create Unique Name List" id="80b570d3-94ee-4968-90ba-48b465617294" timestamp="2025-11-17T19:48:01.577Z" tests="2" failures="0" errors="0" time="0.283">
+    <testcase name="Status code should be 200" time="0.283" classname="CreateUniqueNameList"/>
+    <testcase name="List name is matching the lastly created one" time="0.283" classname="CreateUniqueNameList"/>
+  </testsuite>
+  <testsuite name="Get All Lists from a Board" id="34b0195e-987c-48d1-a8e0-f9d38f294b45" timestamp="2025-11-17T19:48:01.577Z" tests="3" failures="0" errors="0" time="0.277">
+    <testcase name="Status code should be 200" time="0.277" classname="GetAllListsFromABoard"/>
+    <testcase name="Response is not an empty Array" time="0.277" classname="GetAllListsFromABoard"/>
+    <testcase name="List names should be unique" time="0.277" classname="GetAllListsFromABoard"/>
+  </testsuite>
+  <testsuite name="Create Card in TO DO List" id="72cbf980-3e16-42ab-a5e5-0a070af88d87" timestamp="2025-11-17T19:48:01.577Z" tests="3" failures="0" errors="0" time="0.423">
+    <testcase name="Response status code should be 200" time="0.423" classname="CreateCardInToDoList"/>
+    <testcase name="Card name should be 'CreateLoginPage'" time="0.423" classname="CreateCardInToDoList"/>
+    <testcase name="Labels and attachments should be empty" time="0.423" classname="CreateCardInToDoList"/>
+  </testsuite>
+  <testsuite name="Move Card to Unique Name List" id="b6e0989a-916e-4708-9619-dfd30e69f775" timestamp="2025-11-17T19:48:01.577Z" tests="3" failures="0" errors="0" time="0.459">
+    <testcase name="Response status code should be 200" time="0.459" classname="MoveCardToUniqueNameList"/>
+    <testcase name="Card Id is correct'" time="0.459" classname="MoveCardToUniqueNameList"/>
+    <testcase name="The card is moved to the correct list'" time="0.459" classname="MoveCardToUniqueNameList"/>
+  </testsuite>
+  <testsuite name="Delete Card" id="fd6e3b23-72bf-4966-9259-ae8fd34eb0d7" timestamp="2025-11-17T19:48:01.577Z" tests="2" failures="0" errors="0" time="0.433">
+    <testcase name="Response status code is 200" time="0.433" classname="DeleteCard"/>
+    <testcase name="'Limists' property exist and is an empty object" time="0.433" classname="DeleteCard"/>
+  </testsuite>
+  <testsuite name="Delete Board" id="d29f4056-6f8c-479e-bc50-be6afae4650b" timestamp="2025-11-17T19:48:01.577Z" tests="2" failures="0" errors="0" time="0.634">
+    <testcase name="Response status code is 200" time="0.634" classname="DeleteBoard"/>
+    <testcase name="There is an elementh '_value'" time="0.634" classname="DeleteBoard"/>
+  </testsuite>
+</testsuites>
