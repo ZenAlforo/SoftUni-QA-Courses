@@ -674,11 +674,11 @@
 		},
 		{
 			"key": "trelloKey",
-			"value": "d9fbcfdb28e0ce8428a48fa1f4d43a54"
+			"value": "{{trelloKey}}"
 		},
 		{
 			"key": "trelloToken",
-			"value": "ATTA4168914a79d92d8163d7198a759ab7c96a181f05e1c7212b80896a1874920d0c1E140CAE"
+			"value": "{{trelloToken}}"
 		},
 		{
 			"key": "boardId",
