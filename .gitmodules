@@ -1,0 +1,6 @@
+[submodule "BACKEND_TEST_AUTOMATION/Ci_Cd_GitActions2025"]
+	path = BACKEND_TEST_AUTOMATION/Ci_Cd_GitActions2025
+	url = https://github.com/ZenAlforo/Ci_Cd_GitActions2025.git
+[submodule "BACKEND_TEST_AUTOMATION/8.CI_CD_ExerciseWithGitHubActions"]
+	path = BACKEND_TEST_AUTOMATION/8.CI_CD_ExerciseWithGitHubActions
+	url = https://github.com/ZenAlforo/Ci_Cd_GitActions2025.git
