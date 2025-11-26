@@ -1,0 +1,6 @@
+[submodule "BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_HouseRentingSystem"]
+	path = BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_HouseRentingSystem
+	url = https://github.com/ZenAlforo/Ci_Cd_Pipeline_HouseRentingSystem
+[submodule "BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_Students_Registry"]
+	path = BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_Students_Registry
+	url = https://github.com/ZenAlforo/Ci_Cd_Pipeline_Students_Registry
