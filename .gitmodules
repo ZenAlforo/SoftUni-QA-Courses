@@ -4,3 +4,6 @@
 [submodule "BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_Students_Registry"]
 	path = BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_Students_Registry
 	url = https://github.com/ZenAlforo/Ci_Cd_Pipeline_Students_Registry
+[submodule "BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_Jenkins"]
+	path = BACKEND_TEST_AUTOMATION/Ci_Cd_Pipeline_Jenkins
+	url = https://github.com/ZenAlforo/CI_CD_Jenkins
