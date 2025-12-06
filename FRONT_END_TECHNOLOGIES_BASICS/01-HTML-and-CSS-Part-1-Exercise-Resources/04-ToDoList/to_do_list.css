@@ -1,0 +1,31 @@
+body {
+  /* 1. Ensure the container fills the viewport */
+  height: 100vh;
+  margin: 0; /* Remove default body margin */
+
+  /* 2. Enable Flexbox */
+  display: flex;
+
+  /* 3. Center horizontally (along the main axis) */
+  justify-content: center;
+
+  /* 4. Center vertically (along the cross axis) */
+  align-items: center;
+
+}
+.my-list {
+  background-color: #f7f381;
+  padding: 8px 24px;
+  width: 500px;
+  font-size: 30px;
+  border: 1px solid #f7f381;
+  box-shadow: 0 0 10px 2px #333333;
+}
+
+ol {
+  margin: 12px;
+}
+
+p {
+  text-align: center;
+}

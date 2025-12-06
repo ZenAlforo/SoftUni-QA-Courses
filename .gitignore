@@ -1,4 +1,13 @@
+# ignore compiled/build filed
+
 **/bin/
 **/obj/
 **/.vs/
+*.exe
+
+# ignore environment files/secrets
+.env
+.key
+secrets.json
+
 
