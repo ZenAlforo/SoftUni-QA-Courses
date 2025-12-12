@@ -1,0 +1,44 @@
+* {
+  font-family: Helvetica, sans-serif;
+
+}
+
+body {
+  padding: 50px;
+}
+
+.nav-bar {
+  border-bottom: 1px solid black;
+}
+
+div {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+ul {
+  display: inline-block;
+  padding-left: 100px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  color: rgb(109, 201, 38);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+h2 {
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+}
+

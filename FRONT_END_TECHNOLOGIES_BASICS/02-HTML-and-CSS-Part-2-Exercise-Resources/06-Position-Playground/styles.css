@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+/* Reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Viewport sections */
+.viewport {
+    height: 25em;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Different gradients */
+.viewport:nth-child(1) {
+    background-image: linear-gradient(to right, #185a9d, #0085ca, #00adc8, #00d091, #3cea24);
+}
+
+.viewport:nth-child(2) {
+    background-image: linear-gradient(to right, #A83279, #C53764, #D6494C, #DB6532, #D38312);
+}
+
+/* Card container */
+.card {
+    position: relative;
+    width: 15em;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+/* Maintain aspect ratios */
+.viewport:nth-child(1) .card::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 */
+}
+
+.viewport:nth-child(2) .card::before {
+    content: "";
+    display: block;
+    padding-top: 150%; /* tall */
+}
+
+/* Image styling */
+.card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+/* Dark gradient overlay */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        rgba(0, 0, 0, 0) 55%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    z-index: 5;
+}
+
+/* Positioned icons INSIDE the card */
+.card i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 16px;
+    z-index: 10;
+}
