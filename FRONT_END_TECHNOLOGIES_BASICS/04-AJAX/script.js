@@ -1,40 +1,142 @@
-// console.log("Hello.");
-// setTimeout(function () {
-//   console.log("Goodbye!");
-// }, 0);
-// console.log("Hello again!");
+// // 1. SOLVE WITH AJAX (XMLHTTPREQUEST)
 
-// function running() {
-//   return "Running";
-// }
-// function category(run, type) {
-//   console.log(run() + " " + type);
-// }
-// category(running, "sprint"); // Running sprint
+// let button = document.getElementById("load");
+// let httpRequest;
+// button.addEventListener("click", loadRepos);
 
-// console.log("Before promise");
-// new Promise(function (resolve, reject) {
+// function loadRepos() {
+//   let url = "https://api.github.com/users/testnakov/repos";
+//   httpRequest = new XMLHttpRequest();
+//   httpRequest.addEventListener("readystatechange", showRepos);
+//   httpRequest.open("GET", url);
+//   httpRequest.send();
+// }
+
+// function showRepos() {
+//   if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+//     document.getElementById("res").textContent = httpRequest.responseText;
+//   }
+// }
+
+// // 2. USING SETTIMEOUT TO SIMULATE ASYNCHRONOUS OPERATION
+
+// function synchronousFunction() {
+//   console.log("hello");
 //   setTimeout(function () {
-//     resolve("done");
-//   }, 500);
-// }).then(function (res) {
-//   console.log("Then returned: " + res);
-// });
-// console.log("After promise");
+//     console.log("goodbye");
+//   }, 2000);
+//   console.log("hi again");
+// }
 
-// fetch("https://api.github.com/users/testnakov/repos")
-//   .then((response) => response.json())
-//   .then((data) => console.log(data))
-//   .catch((error) => console.error(error));
+// synchronousFunction();
 
-// fetch("/url", {
-//   method: "post",
-//   headers: { "Content-type": "application/json" },
-//   body: JSON.stringify(data),
+// // 3. PROMISE WITH SIMULATED ASYNC OPERATION
+
+// let promise = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     let success = true; // change to false to test rejection
+//     if (success) {
+//       resolve("The operation was completed!");
+//     } else {
+//       reject("The operation failed.");
+//     }
+//   }, 1000);
 // });
+
+// promise
+//   .then(function (message) {
+//     console.log("Success: " + message);
+//   })
+//   .catch(function (message) {
+//     console.log("Error: " + message);
+//   })
+//   .finally(() => {
+//     console.log("The promise has been settled.");
+//   });
+
+// // 4. USING PROMISE.METHODS DIRECTLY (WITHOUT NEW PROMISE)
+
+// function validateInput (input) {
+//   if (input !== "expectedValue") {
+//     return Promise.reject("Invalid input provided.");
+//   } else {
+//     return Promise.resolve("Input is valid.");
+//   }
+// }
+
+// validateInput("expectedValue")
+// .then(function (message) {
+//   console.log(message);
+// })
+// .catch(function (message) {
+//   console.log(message);
+// });
+
+// // 5.USING PROMISE.ALL VS PROMISE.ALLSETTLED
+// // ALL PROMISES MUST BE RESOLVED, OTHERWISE THE CATCH BLOCK IS TRIGGERED
+
+// function firstFetch() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       reject("First fetch failed.");
+//     }, 5000);
+//   });
+// }
+
+// function secondFetch() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Second fetch completed.");
+//     }, 5000);
+//   });
+// }
+
+// function thirdFetch() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Third fetch completed.");
+//     }, 4000);
+//   });
+// }
+
+// Promise.all([firstFetch(), secondFetch(), thirdFetch()])
+//   .then((messages) => {
+//     console.log(messages);
+//   })
+
+// Promise.allSettled([firstFetch(), secondFetch(), thirdFetch()])
+//   .then((results) => {
+//     results.forEach((result) => {
+//       if (result.status === "fulfilled") {
+//         console.log("Success: " + result.value);
+//       } else {
+//         console.log("Failure: " + result.reason);
+//       }
+//     });
+//   });
+
+// // 6. PROMISE WITH FETCH API
+
+// let button = document.getElementById("load");
+// button.addEventListener("click", loadRepos);
+
+// function loadRepos() {
+//   let url = "https://api.github.com/users/testnakov/repos";
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       document.getElementById("res").textContent = JSON.stringify(data, null, 2);
+//     })
+//     .catch((error) => {
+//       console.error("Error fetching repos:", error);
+//     });
+// }
+
+// // 7. ASYNC AWAIT WITH FETCH API
 
 // function resolveAfter2Seconds() {
-//   return new Promise((resolve) => {
+//   console.log("calling");
+//   return new Promise(resolve => {
 //     setTimeout(() => {
 //       resolve("resolved");
 //     }, 2000);
@@ -42,36 +144,28 @@
 // }
 
 // async function asyncCall() {
-//   console.log("calling");
 //   let result = await resolveAfter2Seconds();
 //   console.log(result);
 // }
 
 // asyncCall();
 
-const url = "https://api.github.com/users/testnakov/repos";
+// 8. GET REPOS WITH ASYNC AWAIT WITH FETCH API AND TRY CATCH BLOCK
 
-// function logFetch(url) {
-//   return fetch(url)
-//     .then((response) => {
-//       return response.text();
-//     })
-//     .then((text) => {
-//       console.log(text);
-//     })
-//     .catch((err) => {
-//       console.error(err);
-//     });
-// }
+let button = document.getElementById("load");
+button.addEventListener("click", loadRepos);
 
-// logFetch(url);
-
-async function logFetch(url) {
+async function loadRepos() {
+  let url = "https://api.github.com/users/testnakov/repos";
   try {
-    const response = await fetch(url);
-    console.log(await response.text());
-  } catch (err) {
-    console.log(err);
+    let response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status} (${response.statusText})`);
+    }
+    let data = await response.json();
+    document.getElementById("res").textContent = JSON.stringify(data, null, 2);
+  } catch (error) {
+    document.getElementById("res").textContent = "Failed to load repos.";
+    console.error(error);
   }
 }
-logFetch(url);
