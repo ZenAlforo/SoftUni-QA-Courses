@@ -19,3 +19,10 @@ button {
 button:hover {
     background-color: #1a2e4c;
 }
+
+div {
+    font-size: 20px;
+    color: #333333;
+    margin: 20px;
+    padding: 30px;
+}

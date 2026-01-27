@@ -1,45 +1,66 @@
-// // Solve with callback
+// // 1. SOLVE WITH CALBACKS
+
+// let outputBox = document.getElementById("output");
+// let button = document.getElementById("helloWorld");
 
 // function helloWorld() {
+//   outputBox.textContent = "Hello, ";
+//   setTimeout(() => {
+//     printToOutput(printWorld());
+//   }, 2000);
+// }
+
+// function printWorld() {
+//   return "World!";
+// }
+
+// function printToOutput(text) {
+//   let divContent = outputBox.textContent;
+//   outputBox.textContent = divContent + text;
+// }
+
+// button.addEventListener("click", helloWorld);
+
+// // 2. SOLVE WITH PROMISES
+
+// let button = document.querySelector("#helloWorld");
+// let outputBox = document.getElementsByTagName("p")[0];
+
+// function helloWorld() {
+//   outputBox.textContent = "Hello, ";
+
+//   new Promise((resolve, reject) => {
 //     setTimeout(() => {
-//         console.log("World!");
+//       resolve("World!");
 //     }, 2000);
-//     console.log("Hello");
+//   }).then((result) => {
+//     outputBox.textContent += result;
+//   }).catch((error) => {
+//     console.error("Error:", error);
+//   });
 // }
 
-// let btn = document.getElementById("btn");
-// btn.addEventListener("click", helloWorld);
+// button.addEventListener("click", helloWorld);
 
-// // Solve with Promise
+// 3. SOLVE WITH ASYNC / AWAIT
 
-// function helloWorldWithPromise() {
-//     console.log("Hello");
+let button = document.querySelector("#helloWorld");
+let outputBox = document.getElementsByTagName("p")[0];
 
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve("World!");
-//         }, 2000);
-//     }).then((result) => console.log(result));
-// }
+async function helloWorld() {
+  try {
+    outputBox.textContent = "Hello, ";
 
-// let btn = document.getElementById("btn");
-// btn.addEventListener("click", helloWorldWithPromise);
+    const result = await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve("World!");
+      }, 2000);
+    });
 
-// Async/Await solution
-
-function helloWorldAsync() {
-  console.log("Hello");
-
-  let promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("World!");
-    }, 2000);
-  });
-
-  return promise;
+    outputBox.textContent += result;
+  } catch (error) {
+    console.error("Error:", error);
+  }
 }
 
-let btn = document.getElementById("btn");
-btn.addEventListener("click", async () => {
-  console.log(await helloWorldAsync());
-});
+button.addEventListener("click", helloWorld);

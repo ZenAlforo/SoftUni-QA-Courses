@@ -1,19 +1,8 @@
-// function chainedPromises() {
-//   // with normal callbacks
-//   setTimeout(() => {
-//     console.log("2");
-//   }, 2000);
-//   setTimeout(() => {
-//     console.log("3");
-//   }, 3000);
-//   console.log("Start");
-//   setTimeout(() => {
-//     console.log("1");
-//   }, 1000);
-// }
+// // SOLVE WITH CALLBACKS
 
-// // with nested callbacks
 // function chainedPromises() {
+//   console.log("Start");
+
 //   setTimeout(() => {
 //     console.log("1");
 //     setTimeout(() => {
@@ -23,66 +12,39 @@
 //       }, 1000);
 //     }, 1000);
 //   }, 1000);
-//   console.log("Start");
 // }
 
-// with chained promises
+// // SOLVE WITH PROMISES
 
-// function wait(ms) {
-//   let promise = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve();
-//     }, ms);
-//   });
-
-//   return promise;
+// function delay(value, ms) {
+//   return new Promise((resolve) => setTimeout(() => resolve(value), ms));
 // }
 
 // function chainedPromises() {
 //   console.log("Start");
-//   wait(1000)
-//     .then(() => {
-//       console.log("1");
-//     })
-//     .then(() => {
-//       return wait(1000);
-//     })
-//     .then(() => {
-//       console.log("2");
-//     })
-//     .then(() => {
-//       return wait(1000);
-//     })
-//     .then(() => {
-//       console.log("3");
-//     });
+//   delay("1", 1000).then((result) => {
+//     console.log(result);
+//     return delay("2", 1000)
+//       .then((result) => {
+//         console.log(result);
+//         return delay("3", 1000);
+//       })
+//       .then((result) => {
+//         console.log(result);
+//       });
+//   });
 // }
 
-// with nested promises
+// SOLVE WITH ASYNC / AWAIT
 
-function wait(ms) {
-  let promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve();
-    }, ms);
-  });
-  return promise;
+function delay(value, ms) {
+  return new Promise((resolve) => setTimeout(() => resolve(value), ms));
 }
 
-function chainedPromises() {
+async function chainedPromises() {
   console.log("Start");
-  wait(1000)
-    .then(() => {
-      console.log("1");
-      return wait(1000);
-    })
-    .then(() => {
-      console.log("2");
-      return wait(1000);
-    })
-    .then(() => {
-      console.log("3");
-    });
+
+  console.log(await delay("1", 1000));
+  console.log(await delay("2", 1000));
+  console.log(await delay("3", 1000));
 }
-let btn = document.querySelector("#btn");
-btn.addEventListener("click", chainedPromises);
