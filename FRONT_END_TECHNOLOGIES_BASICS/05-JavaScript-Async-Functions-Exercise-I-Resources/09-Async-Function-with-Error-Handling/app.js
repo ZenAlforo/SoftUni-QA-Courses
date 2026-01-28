@@ -1,3 +1,7 @@
 async function promiseRejectionAsync() {
-   // TODO
+   try {
+      await Promise.reject(new Error('This is a rejected promise'));
+   } catch (error) {
+      console.log(error);
+   }
 }
