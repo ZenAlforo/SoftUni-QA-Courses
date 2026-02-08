@@ -1,34 +1,32 @@
-async function retryPromise(unstableTask, retries = 3) {
-  let attempts = retries;
-  while (attempts > 0) {
+async function retryPromise(randomPromiseResult, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const result = await unstableTask();
-      return result;
+      const result = await randomPromiseResult();
+      console.log(`Attempt ${attempt}: ${result}`);
+      return result; // Exit if the promise is resolved
     } catch (error) {
-      attempts--;
-      console.warn(`Attempt failed. Retries left: ${attempts}`);
-      if (attempts === 0) {
-        throw new Error(`All ${retries} retries failed.`);
+      console.log(`Attempt ${attempt} failed: ${error}`);
+      if (attempt === retries) {
+        console.log("All attempts failed. No more retries.");
+        throw new Error("GG, You are cooked!"); // Rethrow the error after exhausting all retries
       }
-
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // wait 1 second before retrying
     }
   }
 }
 
-function unstableTask() {
+const unstablePromise = () => {
   return new Promise((resolve, reject) => {
-    // Simulate a task that has a 50% chance to fail
-    if (Math.random() > 0.5) {
-      resolve("Operation succeeded!");
+    const randomOutcome = Math.random() > 0.5;
+    if (randomOutcome) {
+      resolve("Promise resolved");
     } else {
-      reject(new Error());
+      reject("Promise rejected");
     }
   });
-}
+};
 
-function executeRetry() {
-  retryPromise(unstableTask)
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error.message));
+function startRetrying() {
+  retryPromise(unstablePromise)
+    .then((result) => console.log(`Final Result: ${result}`))
+    .catch((error) => console.error(`${error}`));
 }

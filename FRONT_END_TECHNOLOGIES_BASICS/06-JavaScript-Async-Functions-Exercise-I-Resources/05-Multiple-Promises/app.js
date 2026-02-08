@@ -1,51 +1,21 @@
-// with Promises
-
 function multiplePromises() {
-  const promise1 = new Promise((resolve, reject) =>
-    setTimeout(() => {
-      resolve("Promise 1 resolved");
-    }, 1000)
+  const firstResult = new Promise((resolve) =>
+    setTimeout(() => resolve("First promise resolved"), 1000),
   );
-  const promise2 = new Promise((resolve, reject) =>
-    setTimeout(() => {
-      resolve("Promise 2 resolved");
-    }, 2000)
+  const secondResult = new Promise((_, reject) =>
+    setTimeout(() => reject("Second promise rejected"), 2000),
   );
-  const promise3 = new Promise((resolve, reject) =>
-    setTimeout(() => {
-      reject("Promise 3 is rejected");
-    }, 3000)
+  const thirdResult = new Promise((resolve) =>
+    setTimeout(() => resolve("Third promise resolved"), 1000),
   );
 
-  Promise.allSettled([promise1, promise2, promise3]).then((results) => {
-    results.forEach((result) =>
-      console.log(result.status, result.value || result.reason)
-    );
-  });
+  Promise.allSettled([firstResult, secondResult, thirdResult]).then(
+    (results) => {
+      results.forEach((result, index) => {
+        console.log(
+          `Promise ${index + 1} status is ${result.status} with message: ${result.value || result.reason}`,
+        );
+      });
+    },
+  );
 }
-
-// with async/await
-
-async function multiplePromisesAsync() {
-      const promise1 = new Promise((resolve, reject) =>
-        setTimeout(() => {
-          resolve("Promise 1 resolved");
-        }, 1000)
-      );
-      const promise2 = new Promise((resolve, reject) =>
-        setTimeout(() => {
-          resolve("Promise 2 resolved");
-        }, 2000)
-      );
-      const promise3 = new Promise((resolve, reject) =>
-        setTimeout(() => {
-          reject("Promise 3 is rejected");
-        }, 3000)
-      );
-
-      let results = await Promise.allSettled([promise1, promise2, promise3]);
-      results.forEach((result) =>
-            console.log(result.status, result.value || result.reason)
-      );
-}
-

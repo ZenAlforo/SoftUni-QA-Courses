@@ -1,20 +1,19 @@
 async function fetchSequential() {
-  const urls = [
-    "https://swapi.dev/api/people/1",
-    "https://swapi.dev/api/people/2",
-    "https://swapi.dev/api/people/3"
-  ];
+  try {
+    const firstResponse = await fetch("https://swapi.dev/api/people/1/");
+    if (!firstResponse.ok) {
+      throw new Error(`HTTP error! status: ${firstResponse.status} for the first request`);
+    }
+    const firstData = await firstResponse.json();
+    console.log("First request response: ", firstData);
 
-  // with .then()
-  for (const url of urls) {
-      const response = await fetch(url).then(res => res.json());
-      console.log(response);
-  }
-
-  // with async/await
-  for (const url of urls) {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data);
+    const secondResponse = await fetch("https://swapi.dev/api/people/2/");
+    if (!secondResponse.ok) {
+      throw new Error(`HTTP error! status: ${secondResponse.status} for the second request`);
+    }
+    const data2 = await secondResponse.json();
+    console.log(`Second request response: `, data2);
+  } catch (error) {
+    console.error("Error fetching data:", error);
   }
 }

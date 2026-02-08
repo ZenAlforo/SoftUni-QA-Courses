@@ -1,15 +1,21 @@
 async function fetchParallel() {
-  const url1 = "https://swapi.dev/api/people/1";
-  const url2 = "https://swapi.dev/api/people/2";
-  const url3 = "https://swapi.dev/api/people/3";
+  try {
+    const responses = await Promise.all([
+      fetch("https://swapi.dev/api/people/1/"),
+      fetch("https://swapi.dev/api/people/2/"),
+    ]);
 
-  const [response1, response2, response3] = await Promise.all([
-    fetch(url1),
-    fetch(url2),
-    fetch(url3),
-  ]);
+    for (const [index, response] of responses.entries()) {
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error! status: ${response.status} for request ${index + 1}`,
+        );
+      }
 
-  console.log(await response1.json());
-  console.log(await response2.json());
-  console.log(await response3.json());
+      const data = await response.json();
+      console.log(`Request ${index + 1} response: `, data);
+    }
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
 }
